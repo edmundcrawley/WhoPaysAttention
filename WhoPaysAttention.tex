@@ -1,0 +1,98 @@
+% !TeX spellcheck = en_GB
+\documentclass[12pt,pdftex,letterpaper]{article}
+%            \usepackage{setspace}
+\usepackage[dvips,]{graphicx} %draft option suppresses graphics dvi display
+%            \usepackage{lscape}
+%            \usepackage{latexsym}
+%            \usepackage{endnotes}
+%            \usepackage{epsfig}
+%           \singlespace
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{9in}
+\addtolength{\topmargin}{-\topmargin} 
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\addtolength{\headsep}{-\headsep}
+\addtolength{\topskip}{-\topskip}
+\addtolength{\headheight}{-\headheight}
+\setcounter{secnumdepth}{2}
+%            \renewcommand{\thesection}{\arabic{section}}
+% \renewcommand{\footnote}{\endnote}
+\newtheorem{proposition}{Proposition}
+\newtheorem{definition}{Definition}
+\newtheorem{lemma}{lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{assumption}{Assumption}
+\newcommand{\Prob}{\operatorname{Prob}}
+\clubpenalty 5000
+\widowpenalty 5000
+\renewcommand{\baselinestretch}{1.25}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{bbm}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\E}{\mathbb{E}}
+
+\begin{document}
+	
+\section{Who Pays Attention - basic idea}
+
+Consider a simple two-period optimization problem:
+
+\begin{align}
+\max u(C_1) + \beta u(C_2)
+\end{align}
+subject to:
+\begin{align}
+C_1 + \frac{1}{R} C_2 \leq Y_1 + \frac{1}{R} Y_2
+\end{align}
+
+The Euler equation is:
+\begin{align}
+u'(C_1) = \beta R u'(C_2) \\
+\end{align}
+Assuming log utility and linearizing:
+\begin{align}
+C_1 = \frac{1}{\beta R} C_2 \\
+\end{align}
+Plugging into budget eq:
+\begin{align}
+\frac{1}{R}(\frac{1}{\beta} + 1 )C_2 = Y_1 + \frac{1}{R} Y_2 \\
+C_2 = \frac{RY_1 +  Y_2}{\frac{1}{\beta} + 1 } \\
+C_1 = \frac{Y_1 + \frac{1}{R} Y_2}{1 + \beta }
+\end{align}
+\begin{align}
+\frac{1}{R}(\frac{1}{\beta} + 1 )C_2 = Y_1 + \frac{1}{R} Y_2 \\
+\log(C_2) = \log( \frac{RY_1 +  Y_2}{\frac{1}{\beta} + 1 } ) \\
+C_1 = \frac{Y_1 + \frac{1}{R} Y_2}{1 + \beta }
+\end{align}
+Suppose, for simplicity, $\beta = 1$, $Y=Y_1=Y_2$, $R= 1+r$ with $r$ small such that $1/R \approx = 1-r$, then
+\begin{align}
+C_2 = (1+\frac{r}{2}) Y \\
+C_1 = (1-\frac{r}{2 }) Y
+\end{align}
+Suppose you didn't pay attention to the change in $R$, then you would consume $C_1=C_2=Y$.\\
+Loss of utility would be second order.
+
+\newpage
+
+Now assume you start owing a debt of 1, face value 1, in period 2, with an offsetting income of 1 next period. You have the option to refinance.\\
+If $R$ goes up, you will not refinance - problem is identical to the above:
+ \begin{align}
+ C_2 = (1+\frac{r}{2}) Y \\
+ C_1 = (1-\frac{r}{2 }) Y
+ \end{align}
+However, if $R$ goes down, you can refinance and only pay (1+r) next period
+ \begin{align}
+C_2 =  Y \\
+C_1 = (1-r) Y
+\end{align}
+If you didn't notice this, loss to utility would be first order!!!
+
+\section{A Two-Period Sticky Price Model}
+
+
+\end{document}
