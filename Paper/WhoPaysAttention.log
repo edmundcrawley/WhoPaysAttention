@@ -1,37 +1,33 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2019.8.22)  12 FEB 2020 13:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.11.20)  13 FEB 2020 14:40
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
-**WhoPaysAttention.tex
-(./WhoPaysAttention.tex
-LaTeX2e <2014/05/01>
-Babel <3.9k> and hyphenation patterns for 78 languages loaded.
-(./AEA.cls
+**./WhoPaysAttention.tex
+(WhoPaysAttention.tex
+LaTeX2e <2018-12-01>
+(AEA.cls
 Document Class: AEA 2011/07/24 American Economic Association Article Classes
-(c:/Program Files (x86)/texlive/2014/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2014/04/23 v1.8e multicolumn formatting (FMi)
-\c@tracingmulticols=\count79
-\mult@box=\box26
+("C:\Program Files\MiKTeX 2.9\tex/latex/tools\multicol.sty"
+Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
+\c@tracingmulticols=\count80
+\mult@box=\box27
 \multicol@leftmargin=\dimen102
-\c@unbalance=\count80
-\c@collectmore=\count81
-\doublecol@number=\count82
-\multicoltolerance=\count83
-\multicolpretolerance=\count84
+\c@unbalance=\count81
+\c@collectmore=\count82
+\doublecol@number=\count83
+\multicoltolerance=\count84
+\multicolpretolerance=\count85
 \full@width=\dimen103
 \page@free=\dimen104
 \premulticols=\dimen105
 \postmulticols=\dimen106
 \multicolsep=\skip41
 \multicolbaselineskip=\skip42
-\partial@page=\box27
-\last@line=\box28
+\partial@page=\box28
+\last@line=\box29
 \maxbalancingoverflow=\dimen107
-\mult@rightbox=\box29
-\mult@grightbox=\box30
-\mult@gfirstbox=\box31
-\mult@firstbox=\box32
-\@tempa=\box33
+\mult@rightbox=\box30
+\mult@grightbox=\box31
+\mult@gfirstbox=\box32
+\mult@firstbox=\box33
 \@tempa=\box34
 \@tempa=\box35
 \@tempa=\box36
@@ -48,60 +44,63 @@ Package: multicol 2014/04/23 v1.8e multicolumn formatting (FMi)
 \@tempa=\box47
 \@tempa=\box48
 \@tempa=\box49
-\c@columnbadness=\count85
-\c@finalcolumnbadness=\count86
+\@tempa=\box50
+\c@columnbadness=\count86
+\c@finalcolumnbadness=\count87
 \last@try=\dimen108
 \multicolovershoot=\dimen109
 \multicolundershoot=\dimen110
-\mult@nat@firstbox=\box50
-\colbreak@box=\box51
-\mc@col@check@num=\count87
+\mult@nat@firstbox=\box51
+\colbreak@box=\box52
+\mc@col@check@num=\count88
 )
-(c:/Program Files (x86)/texlive/2014/texmf-dist/tex/latex/setspace/setspace.sty
+(C:\Users\edmun\AppData\Roaming\MiKTeX\2.9\tex/latex/setspace\setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
-) (c:/Program Files (x86)/texlive/2014/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2013/01/14 v2.14 AMS math features
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
+Package: amsmath 2018/12/01 v2.17b AMS math features
 \@mathmargin=\skip43
-For additional information on amsmath, use the `?' option.
-(c:/Program Files (x86)/texlive/2014/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2000/06/29 v2.01
 
-(c:/Program Files (x86)/texlive/2014/texmf-dist/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks14
 \ex@=\dimen111
 ))
-(c:/Program Files (x86)/texlive/2014/texmf-dist/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen112
 )
-(c:/Program Files (x86)/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 1999/12/14 v2.01 operator names
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count88
-LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count89
-\leftroot@=\count90
-LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count91
-\DOTSCASE@=\count92
-LaTeX Info: Redefining \ldots on input line 378.
-LaTeX Info: Redefining \dots on input line 381.
-LaTeX Info: Redefining \cdots on input line 466.
-\Mathstrutbox@=\box52
-\strutbox@=\box53
+\inf@bad=\count89
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count90
+\leftroot@=\count91
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count92
+\DOTSCASE@=\count93
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box53
+\strutbox@=\box54
 \big@size=\dimen113
-LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count93
-\c@MaxMatrixCols=\count94
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count94
+\c@MaxMatrixCols=\count95
 \dotsspace@=\muskip10
-\c@parentequation=\count95
-\dspbrk@lvl=\count96
+\c@parentequation=\count96
+\dspbrk@lvl=\count97
 \tag@help=\toks15
-\row@=\count97
-\column@=\count98
-\maxfields@=\count99
+\row@=\count98
+\column@=\count99
+\maxfields@=\count100
 \andhelp@=\toks16
 \eqnshift@=\dimen114
 \alignsep@=\dimen115
@@ -113,73 +112,64 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \multlinegap=\skip44
 \multlinetaggap=\skip45
 \mathdisplay@stack=\toks18
-LaTeX Info: Redefining \[ on input line 2665.
-LaTeX Info: Redefining \] on input line 2666.
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
 )
 Journal Selected: 
 Mode Selected: final
 \abstractIndent=\skip46
 \abstractWidth=\skip47
-\c@part=\count100
-\c@section=\count101
-\c@subsection=\count102
-\c@subsubsection=\count103
-\c@paragraph=\count104
-\c@subparagraph=\count105
-\c@figure=\count106
-\c@table=\count107
+\c@part=\count101
+\c@section=\count102
+\c@subsection=\count103
+\c@subsubsection=\count104
+\c@paragraph=\count105
+\c@subparagraph=\count106
+\c@figure=\count107
+\c@table=\count108
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen120
-) (c:/Program Files (x86)/texlive/2014/texmf-dist/tex/latex/natbib/natbib.sty
+) (C:\Users\edmun\AppData\Roaming\MiKTeX\2.9\tex/latex/natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip50
 \bibsep=\skip51
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count108
+\c@NAT@ctr=\count109
 )
-(c:/Program Files (x86)/texlive/2014/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-(c:/Program Files (x86)/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
-(c:/Program Files (x86)/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks19
 )
-(c:/Program Files (x86)/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
-(c:/Program Files (x86)/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
-)
-(c:/Program Files (x86)/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.
-cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
-)
-Package graphics Info: Driver file: pdftex.def on input line 91.
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-(c:/Program Files (x86)/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
 
-(c:/Program Files (x86)/texlive/2014/texmf-dist/tex/generic/oberdiek/infwarerr.
-sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-(c:/Program Files (x86)/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.st
-y
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count109
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen121
 \Gin@req@width=\dimen122
 )
-(c:/Program Files (x86)/texlive/2014/texmf-dist/tex/latex/booktabs/booktabs.sty
-Package: booktabs 2005/04/14 v1.61803 publication quality tables
+(C:\Users\edmun\AppData\Roaming\MiKTeX\2.9\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2019/10/08 v1.6180339 publication quality tables
 \heavyrulewidth=\dimen123
 \lightrulewidth=\dimen124
 \cmidrulewidth=\dimen125
@@ -199,15 +189,17 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@thisrulewidth=\dimen135
 )
 \TableWidth=\skip52
- (c:/Program Files (x86)/texlive/2014/texmf-dist/tex/latex/tools/array.sty
-Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/tools\array.sty"
+Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
 \col@sep=\dimen136
+\ar@mcellbox=\box55
 \extrarowheight=\dimen137
 \NC@list=\toks20
 \extratabsurround=\skip53
 \backup@length=\skip54
-)
-(./WhoPaysAttention.aux)
+\ar@cellbox=\box56
+) (WhoPaysAttention.aux)
 \openout1 = `WhoPaysAttention.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
@@ -223,11 +215,11 @@ LaTeX Font Info:    ... okay on input line 32.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
 
-(c:/Program Files (x86)/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+(C:\Users\edmun\AppData\Roaming\MiKTeX\2.9\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count114
 \scratchdimen=\dimen138
-\scratchbox=\box54
+\scratchbox=\box57
 \nofMPsegments=\count115
 \nofMParguments=\count116
 \everyMPshowfont=\toks21
@@ -236,110 +228,78 @@ LaTeX Font Info:    ... okay on input line 32.
 \MPnumerator=\count118
 \makeMPintoPDFobject=\count119
 \everyMPtoPDFconversion=\toks22
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-(c:/Program Files (x86)/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds
-.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+))))
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(c:/Program Files (x86)/texlive/2014/texmf-dist/tex/generic/oberdiek/ifluatex.s
-ty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-(c:/Program Files (x86)/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ifpdf.sty"
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(c:/Program Files (x86)/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-bas
-e.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-
-(c:/Program Files (x86)/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
-
-(c:/Program Files (x86)/texlive/2014/texmf-dist/tex/generic/oberdiek/kvdefineke
-ys.sty
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-))
-(c:/Program Files (x86)/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.st
-y
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-
-(c:/Program Files (x86)/texlive/2014/texmf-dist/tex/generic/oberdiek/kvsetkeys.
-sty
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-
-(c:/Program Files (x86)/texlive/2014/texmf-dist/tex/generic/oberdiek/etexcmds.s
-ty
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
 Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
-
-(c:/Program Files (x86)/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-
-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
 LaTeX Font Info:    Try loading font information for U+msa on input line 50.
 
-(c:/Program Files (x86)/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 50.
 
-(c:/Program Files (x86)/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-[1
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 50.
 
-{c:/Program Files (x86)/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.m
-ap}]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 56.
- (c:/Program Files (x86)/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 50.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 50.
+ [1
+
+{C:/Users/edmun/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 56.
-
-
-Package natbib Warning: Citation `wong_population_2016' on page 2 undefined on 
-input line 64.
-
-
-Package natbib Warning: Citation `berger_prepayment_2018' on page 2 undefined o
-n input line 64.
-
-
-Package natbib Warning: Citation `eichenbaum_refinance_2018' on page 2 undefine
-d on input line 64.
-
-
-Package natbib Warning: Citation `greenwald_mortgage_2018' on page 2 undefined 
-on input line 65.
-
-
-Package natbib Warning: Citation `garriga_monk_2019' on page 2 undefined on inp
-ut line 65.
-
-[2]
-
-Package natbib Warning: Citation `madrian_power_2001' on page 3 undefined on in
-put line 74.
-
-
+ [2]
 Underfull \hbox (badness 10000) in paragraph at lines 89--92
 
  []
@@ -370,64 +330,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 161--162
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7]
-
-Package natbib Warning: Citation `arGHH' on page 8 undefined on input line 178.
-
-
-
 Underfull \vbox (badness 2538) has occurred while \output is active []
 
  [8]
-
-LaTeX Warning: Reference `fig:ImpulseResponse' on page 9 undefined on input lin
-e 200.
-
-<../Figures/shock.pdf, id=42, 433.62pt x 289.08pt>
-File: ../Figures/shock.pdf Graphic file (type pdf)
- <use ../Figures/shock.pdf>
-Package pdftex.def Info: ../Figures/shock.pdf used on input line 206.
+<../Code/Dolo/Figures/shock.pdf, id=41, 433.62pt x 289.08pt>
+File: ../Code/Dolo/Figures/shock.pdf Graphic file (type pdf)
+<use ../Code/Dolo/Figures/shock.pdf>
+Package pdftex.def Info: ../Code/Dolo/Figures/shock.pdf  used on input line 206
+.
 (pdftex.def)             Requested size: 173.48949pt x 115.66081pt.
-
-<../Figures/output_gap.pdf, id=43, 433.62pt x 289.08pt>
-File: ../Figures/output_gap.pdf Graphic file (type pdf)
-
-<use ../Figures/output_gap.pdf>
-Package pdftex.def Info: ../Figures/output_gap.pdf used on input line 207.
+<../Code/Dolo/Figures/output_gap.pdf, id=42, 433.62pt x 289.08pt>
+File: ../Code/Dolo/Figures/output_gap.pdf Graphic file (type pdf)
+<use ../Code/Dolo/Figures/output_gap.pdf>
+Package pdftex.def Info: ../Code/Dolo/Figures/output_gap.pdf  used on input lin
+e 207.
 (pdftex.def)             Requested size: 173.48949pt x 115.66081pt.
-
-<../Figures/real_rate.pdf, id=44, 433.62pt x 289.08pt>
-File: ../Figures/real_rate.pdf Graphic file (type pdf)
-
-<use ../Figures/real_rate.pdf>
-Package pdftex.def Info: ../Figures/real_rate.pdf used on input line 208.
+<../Code/Dolo/Figures/real_rate.pdf, id=43, 433.62pt x 289.08pt>
+File: ../Code/Dolo/Figures/real_rate.pdf Graphic file (type pdf)
+<use ../Code/Dolo/Figures/real_rate.pdf>
+Package pdftex.def Info: ../Code/Dolo/Figures/real_rate.pdf  used on input line
+ 208.
 (pdftex.def)             Requested size: 173.48949pt x 115.66081pt.
-
-<../Figures/nominal_rate.pdf, id=45, 433.62pt x 289.08pt>
-File: ../Figures/nominal_rate.pdf Graphic file (type pdf)
-
-<use ../Figures/nominal_rate.pdf>
-Package pdftex.def Info: ../Figures/nominal_rate.pdf used on input line 209.
+<../Code/Dolo/Figures/nominal_rate.pdf, id=44, 433.62pt x 289.08pt>
+File: ../Code/Dolo/Figures/nominal_rate.pdf Graphic file (type pdf)
+<use ../Code/Dolo/Figures/nominal_rate.pdf>
+Package pdftex.def Info: ../Code/Dolo/Figures/nominal_rate.pdf  used on input l
+ine 209.
 (pdftex.def)             Requested size: 173.48949pt x 115.66081pt.
-
-<../Figures/constrained.pdf, id=46, 433.62pt x 289.08pt>
-File: ../Figures/constrained.pdf Graphic file (type pdf)
-
-<use ../Figures/constrained.pdf>
-Package pdftex.def Info: ../Figures/constrained.pdf used on input line 210.
+<../Code/Dolo/Figures/constrained.pdf, id=45, 433.62pt x 289.08pt>
+File: ../Code/Dolo/Figures/constrained.pdf Graphic file (type pdf)
+<use ../Code/Dolo/Figures/constrained.pdf>
+Package pdftex.def Info: ../Code/Dolo/Figures/constrained.pdf  used on input li
+ne 210.
 (pdftex.def)             Requested size: 173.48949pt x 115.66081pt.
-
-<../Figures/unconstrained.pdf, id=47, 433.62pt x 289.08pt>
-File: ../Figures/unconstrained.pdf Graphic file (type pdf)
-
-<use ../Figures/unconstrained.pdf>
-Package pdftex.def Info: ../Figures/unconstrained.pdf used on input line 211.
+<../Code/Dolo/Figures/unconstrained.pdf, id=46, 433.62pt x 289.08pt>
+File: ../Code/Dolo/Figures/unconstrained.pdf Graphic file (type pdf)
+<use ../Code/Dolo/Figures/unconstrained.pdf>
+Package pdftex.def Info: ../Code/Dolo/Figures/unconstrained.pdf  used on input 
+line 211.
 (pdftex.def)             Requested size: 173.48949pt x 115.66081pt.
-
-<../Figures/inflation.pdf, id=48, 433.62pt x 289.08pt>
-File: ../Figures/inflation.pdf Graphic file (type pdf)
-
-<use ../Figures/inflation.pdf>
-Package pdftex.def Info: ../Figures/inflation.pdf used on input line 212.
+<../Code/Dolo/Figures/inflation.pdf, id=47, 433.62pt x 289.08pt>
+File: ../Code/Dolo/Figures/inflation.pdf Graphic file (type pdf)
+<use ../Code/Dolo/Figures/inflation.pdf>
+Package pdftex.def Info: ../Code/Dolo/Figures/inflation.pdf  used on input line
+ 212.
 (pdftex.def)             Requested size: 173.48949pt x 115.66081pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 200--216
@@ -443,97 +389,76 @@ Underfull \hbox (badness 10000) in paragraph at lines 200--216
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../Figures/shock_fwd_guid.pdf, id=52, 433.62pt x 289.08pt>
-File: ../Figures/shock_fwd_guid.pdf Graphic file (type pdf)
-
-<use ../Figures/shock_fwd_guid.pdf>
-Package pdftex.def Info: ../Figures/shock_fwd_guid.pdf used on input line 218.
+<../Code/Dolo/Figures/shock_fwd_guid.pdf, id=51, 433.62pt x 289.08pt>
+File: ../Code/Dolo/Figures/shock_fwd_guid.pdf Graphic file (type pdf)
+<use ../Code/Dolo/Figures/shock_fwd_guid.pdf>
+Package pdftex.def Info: ../Code/Dolo/Figures/shock_fwd_guid.pdf  used on input
+ line 218.
 (pdftex.def)             Requested size: 173.48949pt x 115.66081pt.
-
-<../Figures/output_fwd_guid.pdf, id=53, 433.62pt x 289.08pt>
-File: ../Figures/output_fwd_guid.pdf Graphic file (type pdf)
-
-<use ../Figures/output_fwd_guid.pdf>
-Package pdftex.def Info: ../Figures/output_fwd_guid.pdf used on input line 219.
-
+<../Code/Dolo/Figures/output_fwd_guid.pdf, id=52, 433.62pt x 289.08pt>
+File: ../Code/Dolo/Figures/output_fwd_guid.pdf Graphic file (type pdf)
+<use ../Code/Dolo/Figures/output_fwd_guid.pdf>
+Package pdftex.def Info: ../Code/Dolo/Figures/output_fwd_guid.pdf  used on inpu
+t line 219.
 (pdftex.def)             Requested size: 173.48949pt x 115.66081pt.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(./WhoPaysAttention.bbl [10])
+(WhoPaysAttention.bbl [10]) [11] [12 <../Code/Dolo/Figures/shock.pdf> <../Code/
+Dolo/Figures/output_gap.pdf
 
-Package natbib Warning: There were undefined citations.
+pdfTeX warning: pdflatex.exe (file ../Code/Dolo/Figures/output_gap.pdf): PDF in
+clusion: multiple pdfs with page group included in a single page
+> <../Code/Dolo/Figures/real_rate.pdf
 
-[11] [12 <../Figures/shock.pdf> <../Figures/output_gap.pdf
+pdfTeX warning: pdflatex.exe (file ../Code/Dolo/Figures/real_rate.pdf): PDF inc
+lusion: multiple pdfs with page group included in a single page
+> <../Code/Dolo/Figures/nominal_rate.pdf
 
-pdfTeX warning: pdflatex.exe (file ../Figures/output_gap.pdf): PDF inclusion: m
-ultiple pdfs with page group included in a single page
-> <../Figures/real_rate.pdf
+pdfTeX warning: pdflatex.exe (file ../Code/Dolo/Figures/nominal_rate.pdf): PDF 
+inclusion: multiple pdfs with page group included in a single page
+> <../Code/Dolo/Figures/constrained.pdf
 
-pdfTeX warning: pdflatex.exe (file ../Figures/real_rate.pdf): PDF inclusion: mu
-ltiple pdfs with page group included in a single page
-> <../Figures/nominal_rate.pdf
+pdfTeX warning: pdflatex.exe (file ../Code/Dolo/Figures/constrained.pdf): PDF i
+nclusion: multiple pdfs with page group included in a single page
+> <../Code/Dolo/Figures/unconstrained.pdf
 
-pdfTeX warning: pdflatex.exe (file ../Figures/nominal_rate.pdf): PDF inclusion:
- multiple pdfs with page group included in a single page
-> <../Figures/constrained.pdf
+pdfTeX warning: pdflatex.exe (file ../Code/Dolo/Figures/unconstrained.pdf): PDF
+ inclusion: multiple pdfs with page group included in a single page
+> <../Code/Dolo/Figures/inflation.pdf
 
-pdfTeX warning: pdflatex.exe (file ../Figures/constrained.pdf): PDF inclusion: 
-multiple pdfs with page group included in a single page
-> <../Figures/unconstrained.pdf
+pdfTeX warning: pdflatex.exe (file ../Code/Dolo/Figures/inflation.pdf): PDF inc
+lusion: multiple pdfs with page group included in a single page
+>] [13 <../Code/Dolo/Figures/shock_fwd_guid.pdf> <../Code/Dolo/Figures/output_f
+wd_guid.pdf
 
-pdfTeX warning: pdflatex.exe (file ../Figures/unconstrained.pdf): PDF inclusion
-: multiple pdfs with page group included in a single page
-> <../Figures/inflation.pdf
-
-pdfTeX warning: pdflatex.exe (file ../Figures/inflation.pdf): PDF inclusion: mu
-ltiple pdfs with page group included in a single page
->] [13 <../Figures/shock_fwd_guid.pdf> <../Figures/output_fwd_guid.pdf
-
-pdfTeX warning: pdflatex.exe (file ../Figures/output_fwd_guid.pdf): PDF inclusi
-on: multiple pdfs with page group included in a single page
->] (./WhoPaysAttention.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+pdfTeX warning: pdflatex.exe (file ../Code/Dolo/Figures/output_fwd_guid.pdf): P
+DF inclusion: multiple pdfs with page group included in a single page
+>] (WhoPaysAttention.aux) ) 
 Here is how much of TeX's memory you used:
- 2939 strings out of 493117
- 41720 string characters out of 6130074
- 105233 words of memory out of 5000000
- 6346 multiletter control sequences out of 15000+600000
- 12443 words of font info for 46 fonts, out of 8000000 for 9000
+ 2912 strings out of 492897
+ 41010 string characters out of 3133497
+ 110744 words of memory out of 3000000
+ 6771 multiletter control sequences out of 15000+200000
+ 12443 words of font info for 46 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,11n,24p,988b,294s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/Program Files (x86)/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmbx10.pfb><c:/Program Files (x86)/texlive/2014/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmcsc10.pfb><c:/Program Files (x86)/texlive/2014/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi10.pfb><c:/Program Files (x86)/texlive/2014/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/Program Files (x86)/texlive/2
-014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/Program Files (x86)
-/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Program F
-iles (x86)/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/
-Program Files (x86)/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss
-bx10.pfb><c:/Program Files (x86)/texlive/2014/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb><c:/Program Files (x86)/texlive/2014/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmsy6.pfb><c:/Program Files (x86)/texlive/2014/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy8.pfb><c:/Program Files (x86)/texlive/2014/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/Program Files (x86)/texl
-ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb><c:/Program Files 
-(x86)/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on WhoPaysAttention.pdf (13 pages, 253626 bytes).
+ 41i,11n,25p,990b,287s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti1
+0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on WhoPaysAttention.pdf (13 pages, 287795 bytes).
 PDF statistics:
- 377 PDF objects out of 1000 (max. 8388607)
- 120 compressed objects within 2 object streams
+ 374 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
