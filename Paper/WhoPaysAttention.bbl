@@ -1,0 +1,46 @@
+
+
+% Bibstyle aea.bst version 2009.05.20
+
+\begin{thebibliography}{xx}
+
+\harvarditem[Auclert \harvardand\ Rognlie]{Adrien Auclert \harvardand\ Matthew
+  Rognlie}{2017}{arGHH}
+{\bf Auclert, Adrien, and Matthew Rognlie.} 2017. ``A note on multipliers in NK
+  models with GHH preferences.'' working paper.
+
+\harvarditem[Berger et~al.]{David~W Berger, Konstantin Milbradt, Fabrice Tourre
+  \harvardand\ Joseph Vavra}{2018}{berger_prepayment_2018}
+{\bf Berger, David~W, Konstantin Milbradt, Fabrice Tourre, and Joseph Vavra.}
+  2018. ``Mortgage Prepayment and Path-Dependent Effects of Monetary Policy.''
+  National Bureau of Economic Research Working Paper 25157.
+
+\harvarditem[Eichenbaum, Rebelo \harvardand\ Wong]{Martin Eichenbaum, Sergio
+  Rebelo \harvardand\ Arlene Wong}{2018}{eichenbaum_refinance_2018}
+{\bf Eichenbaum, Martin, Sergio Rebelo, and Arlene Wong.} 2018. ``State
+  Dependent Effects of Monetary Policy: the Refinancing Channel.'' National
+  Bureau of Economic Research Working Paper 25152.
+
+\harvarditem[Garriga, Kydland \harvardand\ {\v S}ustek]{Carlos Garriga, Finn~E
+  Kydland \harvardand\ Roman {\v S}ustek}{2019}{garriga_monk_2019}
+{\bf Garriga, Carlos, Finn~E Kydland, and Roman {\v S}ustek.} 2019. ``MoNK:
+  Mortgages in a New-Keynesian Model.'' National Bureau of Economic Research
+  Working Paper 26427.
+
+\harvarditem[Greenwald]{Daniel Greenwald}{2018}{greenwald_mortgage_2018}
+{\bf Greenwald, Daniel.} 2018. ``The {Mortgage} {Credit} {Channel} of
+  {Macroeconomic} {Transmission}.'' Social Science Research Network {SSRN}
+  {Scholarly} {Paper} ID 2735491, Rochester, NY.
+
+\harvarditem[Madrian \harvardand\ Shea]{Brigitte~C. Madrian \harvardand\
+  Dennis~F. Shea}{2001}{madrian_power_2001}
+{\bf Madrian, Brigitte~C., and Dennis~F. Shea.} 2001. ``The Power of
+  Suggestion: Inertia in 401(k) Participation and Savings Behavior.'' {\em The
+  Quarterly Journal of Economics}, 116(4):~1149--1187.
+
+\harvarditem[Wong]{Arlene Wong}{2016}{wong_population_2016}
+{\bf Wong, Arlene.} 2016. ``Population Aging and the Transmission of Monetary
+  Policy to Consumption.'' Society for Economic Dynamics 2016 {Meeting} {Paper}
+  716.
+
+\end{thebibliography}
