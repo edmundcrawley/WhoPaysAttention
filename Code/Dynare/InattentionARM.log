@@ -1,0 +1,119 @@
+Starting Dynare (version 4.5.6).
+Starting preprocessing of the model file ...
+Found 15 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+Processing outputs ...
+done
+Preprocessing completed.
+
+
+
+
+Residuals of the static equations:
+
+Equation number 1 : 0
+Equation number 2 : 0
+Equation number 3 : 0
+Equation number 4 : 0
+Equation number 5 : 0
+Equation number 6 : 0
+Equation number 7 : 0
+Equation number 8 : 0
+Equation number 9 : 0
+Equation number 10 : 0
+Equation number 11 : 0
+Equation number 12 : 0
+Equation number 13 : 0
+Equation number 14 : 0
+Equation number 15 : 0
+
+
+
+STEADY-STATE RESULTS:
+
+nu            		 0
+Epi_p         		 0
+i             		 0
+pi_p          		 0
+y_gap         		 0
+r_real        		 0
+n             		 0
+n_R           		 0
+n_K           		 0
+c_R           		 0
+c_K           		 0
+w_gap         		 0
+pi_w          		 0
+real_debt     		 0
+max_real_debt 		 0
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+               0                0                0
+       6.716e-17       -6.716e-17                0
+         0.03483         -0.03483                0
+            0.92             0.92                0
+           0.985            0.985                0
+               1                1                0
+           1.038            1.038                0
+       8.613e+16       -8.613e+16                0
+
+
+There are 2 eigenvalue(s) larger than 1 in modulus 
+for 2 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+MODEL SUMMARY
+
+  Number of variables:         15
+  Number of stochastic shocks: 1
+  Number of state variables:   6
+  Number of jumpers:           2
+  Number of static variables:  8
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables      eps_nu
+eps_nu       0.010000
+
+POLICY AND TRANSITION FUNCTIONS
+                               y_gap            pi_p               i          r_real              nu             c_R             c_K   max_real_debt       real_debt
+nu(-1)                     -0.493354       -0.238647        0.562029        0.790866        0.920000               0       -0.996676       -9.580245       -0.252297
+i(-1)                      -0.981483       -0.024093       -0.036139       -0.036116               0               0       -1.982796        0.601284        0.052952
+w_gap(-1)                   0.630715        0.324561        0.486842        0.162240               0               0        1.274174       -7.775798       -0.697123
+real_debt(-1)              -0.040849       -0.016883       -0.025325       -0.009283               0               0       -0.082523        0.405332        0.986306
+eps_nu                     -0.536255       -0.259399        0.610901        0.859637        1.000000               0       -1.083344      -10.413310       -0.274236
+
+
+THEORETICAL MOMENTS
+VARIABLE              MEAN  STD. DEV.   VARIANCE
+y_gap                  NaN        NaN        NaN
+pi_p                   NaN        NaN        NaN
+i                      NaN        NaN        NaN
+r_real                 NaN        NaN        NaN
+nu                  0.0000     0.2552     0.0651
+c_R                 0.0000     0.0000     0.0000
+c_K                    NaN        NaN        NaN
+max_real_debt          NaN        NaN        NaN
+real_debt              NaN        NaN        NaN
+
+
+
+MATRIX OF CORRELATIONS
+Variables        nu
+nu           1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+Order         1       2       3       4       5
+nu       0.9200  0.8464  0.7787  0.7164  0.6591
+Total computing time : 0h00m02s
