@@ -33,29 +33,31 @@ function [residual, g1, g2, g3] = InattentionARM_dynamic(y, x, params, steady_st
 % Model equations
 %
 
-residual = zeros(15, 1);
-T60 = params(24)+1/params(1)-1;
+residual = zeros(19, 1);
+T65 = params(24)+1/params(1)-1;
 lhs =y(9);
 rhs =params(6)*y(10)+params(7)*y(19)+params(8)*y(11)+y(7);
 residual(1)= lhs-rhs;
 lhs =y(12);
-rhs =y(9)-y(22);
+rhs =y(9)-y(26);
 residual(2)= lhs-rhs;
 lhs =y(10);
 rhs =y(19);
 residual(3)= lhs-rhs;
 lhs =y(19);
-rhs =params(25)*y(5)+(1-params(25))*(params(1)*y(23)+y(11)*params(16)-params(15)*y(18));
+rhs =params(25)*y(5)+(1-params(25))*(params(1)*y(28)+y(11)*params(16)-params(15)*y(18));
 residual(4)= lhs-rhs;
-residual(5) = y(16);
+lhs =y(16);
+rhs =y(27)-(y(9)-y(26))*params(23)/params(4);
+residual(5)= lhs-rhs;
 lhs =y(20);
 rhs =(1-params(24))*(y(6)-y(10))+params(24)*y(21);
 residual(6)= lhs-rhs;
 lhs =y(21);
-rhs =y(22)-y(9)/T60;
+rhs =y(26)-y(9)/T65;
 residual(7)= lhs-rhs;
 lhs =(1-params(18)*(1-params(1)))*y(17);
-rhs =y(18)+y(15)-params(18)*((y(6)-y(10))*T60+y(2)/params(1))+y(21)*params(24)*params(18);
+rhs =y(18)+y(15)-params(18)*((y(6)-y(10))*T65+y(2)/params(1))+y(21)*params(24)*params(18);
 residual(8)= lhs-rhs;
 lhs =y(18);
 rhs =y(19)+y(4)-y(10);
@@ -78,8 +80,20 @@ residual(14)= lhs-rhs;
 lhs =y(7);
 rhs =params(3)*y(1)+x(it_, 1);
 residual(15)= lhs-rhs;
+lhs =y(22);
+rhs =y(9)*4.0;
+residual(16)= lhs-rhs;
+lhs =y(23);
+rhs =y(10)*4.0;
+residual(17)= lhs-rhs;
+lhs =y(24);
+rhs =y(12)*4.0;
+residual(18)= lhs-rhs;
+lhs =y(25);
+rhs =y(19)*4.0;
+residual(19)= lhs-rhs;
 if nargout >= 2,
-  g1 = zeros(15, 24);
+  g1 = zeros(19, 29);
 
   %
   % Jacobian matrix
@@ -91,7 +105,7 @@ if nargout >= 2,
   g1(1,11)=(-params(8));
   g1(1,19)=(-params(7));
   g1(2,9)=(-1);
-  g1(2,22)=1;
+  g1(2,26)=1;
   g1(2,12)=1;
   g1(3,10)=1;
   g1(3,19)=(-1);
@@ -99,21 +113,24 @@ if nargout >= 2,
   g1(4,18)=(-((1-params(25))*(-params(15))));
   g1(4,5)=(-params(25));
   g1(4,19)=1;
-  g1(4,23)=(-((1-params(25))*params(1)));
+  g1(4,28)=(-((1-params(25))*params(1)));
+  g1(5,9)=params(23)/params(4);
+  g1(5,26)=(-(params(23)/params(4)));
   g1(5,16)=1;
+  g1(5,27)=(-1);
   g1(6,10)=1-params(24);
   g1(6,6)=(-(1-params(24)));
   g1(6,20)=1;
   g1(6,21)=(-params(24));
-  g1(7,9)=1/T60;
-  g1(7,22)=(-1);
+  g1(7,9)=1/T65;
+  g1(7,26)=(-1);
   g1(7,21)=1;
   g1(8,2)=1/params(1)*params(18);
-  g1(8,10)=params(18)*(-T60);
+  g1(8,10)=params(18)*(-T65);
   g1(8,15)=(-1);
   g1(8,17)=1-params(18)*(1-params(1));
   g1(8,18)=(-1);
-  g1(8,6)=T60*params(18);
+  g1(8,6)=T65*params(18);
   g1(8,21)=(-(params(24)*params(18)));
   g1(9,10)=1;
   g1(9,4)=(-1);
@@ -134,20 +151,28 @@ if nargout >= 2,
   g1(14,3)=1;
   g1(15,1)=(-params(3));
   g1(15,7)=1;
-  g1(15,24)=(-1);
+  g1(15,29)=(-1);
+  g1(16,9)=(-4.0);
+  g1(16,22)=1;
+  g1(17,10)=(-4.0);
+  g1(17,23)=1;
+  g1(18,12)=(-4.0);
+  g1(18,24)=1;
+  g1(19,19)=(-4.0);
+  g1(19,25)=1;
 
 if nargout >= 3,
   %
   % Hessian matrix
   %
 
-  g2 = sparse([],[],[],15,576);
+  g2 = sparse([],[],[],19,841);
 if nargout >= 4,
   %
   % Third order derivatives
   %
 
-  g3 = sparse([],[],[],15,13824);
+  g3 = sparse([],[],[],19,24389);
 end
 end
 end

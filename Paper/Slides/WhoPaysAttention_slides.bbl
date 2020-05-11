@@ -1,0 +1,40 @@
+\ifx\undefined\BySame
+\newcommand{\BySame}{\leavevmode\rule[.5ex]{3em}{.5pt}\ }
+\fi
+\ifx\undefined\textsc
+\newcommand{\textsc}[1]{{\sc #1}}
+\newcommand{\emph}[1]{{\em #1\/}}
+\let\tmpsmall\small
+\renewcommand{\small}{\tmpsmall\sc}
+\fi
+\begin{thebibliography}{}
+
+\harvarditem[Berger, Milbradt, Tourre, and Vavra]{Berger, Milbradt, Tourre, and
+  Vavra}{2018}{berger_prepayment_2018}
+\textsc{Berger, David~W, Konstantin Milbradt, Fabrice Tourre,  {and} Joseph
+  Vavra}  (2018): ``Mortgage Prepayment and Path-Dependent Effects of Monetary
+  Policy,'' Working Paper 25157, National Bureau of Economic Research.
+
+\harvarditem[Eichenbaum, Rebelo, and Wong]{Eichenbaum, Rebelo, and
+  Wong}{2018}{eichenbaum_refinance_2018}
+\textsc{Eichenbaum, Martin, Sergio Rebelo,  {and} Arlene Wong}  (2018): ``State
+  Dependent Effects of Monetary Policy: the Refinancing Channel,'' Working
+  Paper 25152, National Bureau of Economic Research.
+
+\harvarditem[Garriga, Kydland, and {\v S}ustek]{Garriga, Kydland, and {\v
+  S}ustek}{2019}{garriga_monk_2019}
+\textsc{Garriga, Carlos, Finn~E Kydland,  {and} Roman {\v S}ustek}  (2019):
+  ``MoNK: Mortgages in a New-Keynesian Model,'' Working Paper 26427, National
+  Bureau of Economic Research.
+
+\harvarditem[Greenwald]{Greenwald}{2018}{greenwald_mortgage_2018}
+\textsc{Greenwald, Daniel}  (2018): ``The {Mortgage} {Credit} {Channel} of
+  {Macroeconomic} {Transmission},'' {SSRN} {Scholarly} {Paper} ID 2735491,
+  Social Science Research Network, Rochester, NY.
+
+\harvarditem[Wong]{Wong}{2016}{wong_population_2016}
+\textsc{Wong, Arlene}  (2016): ``Population Aging and the Transmission of
+  Monetary Policy to Consumption,'' 2016 {Meeting} {Paper} 716, Society for
+  Economic Dynamics.
+
+\end{thebibliography}

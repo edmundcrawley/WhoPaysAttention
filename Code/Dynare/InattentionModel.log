@@ -1,6 +1,6 @@
 Starting Dynare (version 4.5.6).
 Starting preprocessing of the model file ...
-Found 13 equation(s).
+Found 17 equation(s).
 Evaluating expressions...done
 Computing static model derivatives:
  - order 1
@@ -29,35 +29,43 @@ Equation number 10 : 0
 Equation number 11 : 0
 Equation number 12 : 0
 Equation number 13 : 0
+Equation number 14 : 0
+Equation number 15 : 0
+Equation number 16 : 0
+Equation number 17 : 0
 
 
 
 STEADY-STATE RESULTS:
 
-nu     		 0
-Epi_p  		 0
-i      		 0
-pi_p   		 0
-y_gap  		 0
-r_real 		 0
-n      		 0
-n_R    		 0
-n_K    		 0
-c_R    		 0
-c_K    		 0
-w_gap  		 0
-pi_w   		 0
+nu         		 0
+Epi_p      		 0
+i          		 0
+pi_p       		 0
+y_gap      		 0
+r_real     		 0
+n          		 0
+n_R        		 0
+n_K        		 0
+c_R        		 0
+c_K        		 0
+w_gap      		 0
+pi_w       		 0
+i_ann      		 0
+pi_p_ann   		 0
+r_real_ann 		 0
+pi_w_ann   		 0
 
 EIGENVALUES:
          Modulus             Real        Imaginary
 
-       3.476e-21       -3.476e-21                0
-       3.083e-16        3.083e-16                0
-       9.316e-05        9.316e-05                0
-            0.96             0.96                0
-               1                1                0
-           1.053            1.053                0
-       1.083e+04        1.083e+04                0
+       4.391e-20       -4.391e-20                0
+        1.07e-15         1.07e-15                0
+       8.717e-05        8.717e-05                0
+            0.92             0.92                0
+           1.039            1.034           0.1037
+           1.039            1.034          -0.1037
+       1.084e+04        1.084e+04                0
 
 
 There are 3 eigenvalue(s) larger than 1 in modulus 
@@ -68,11 +76,11 @@ The rank condition is verified.
 
 MODEL SUMMARY
 
-  Number of variables:         13
+  Number of variables:         17
   Number of stochastic shocks: 1
   Number of state variables:   4
   Number of jumpers:           3
-  Number of static variables:  6
+  Number of static variables:  10
 
 
 MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
@@ -80,45 +88,48 @@ Variables      eps_nu
 eps_nu       0.010000
 
 POLICY AND TRANSITION FUNCTIONS
-                               y_gap            pi_p               i          r_real              nu             c_R             c_K
-nu(-1)                     -1.157357       -0.518868        0.181698        0.656397        0.960000       -0.001729       -2.384469
-i(-1)                      -0.977551       -0.049338       -0.074007       -0.074002               0        0.000007       -2.015579
-r_real(-1)                  0.977551        0.049338        0.074007        0.074002               0       -0.000007        2.015579
-w_gap(-1)                  -0.444702        0.977446        1.466170        1.466079               0       -0.000147       -0.916757
-eps_nu                     -1.205580       -0.540487        0.189269        0.683746        1.000000       -0.001801       -2.483822
+                               y_gap        pi_p_ann           i_ann      r_real_ann              nu             c_R             c_K             n_K
+nu(-1)                     -7.309235       -4.857159       -3.605739        0.576347        0.920000       -3.144096      -11.732021       -7.309235
+i(-1)                      -2.794448       -0.274091       -0.411136       -0.411112               0        0.102787       -5.870899       -2.794448
+r_real(-1)                  2.794448        0.274091        0.411136        0.411112               0       -0.102787        5.870899        2.794448
+w_gap(-1)                  -2.793840        3.725513        5.588270        5.587945               0       -1.397108       -4.276970       -2.793840
+eps_nu                     -7.944821       -5.279521       -3.919281        0.626464        1.000000       -3.417496      -12.752196       -7.944821
 
 
 THEORETICAL MOMENTS
-VARIABLE         MEAN  STD. DEV.   VARIANCE
-y_gap          0.0000     0.2692     0.0725
-pi_p           0.0000     0.1847     0.0341
-i              0.0000     0.0802     0.0064
-r_real         0.0000     0.2568     0.0659
-nu             0.0000     0.3571     0.1276
-c_R            0.0000     0.0006     0.0000
-c_K            0.0000     0.5544     0.3074
+VARIABLE           MEAN  STD. DEV.   VARIANCE
+y_gap            0.0000     1.3204     1.7436
+pi_p_ann         0.0000     1.2744     1.6240
+i_ann            0.0000     0.8916     0.7949
+r_real_ann       0.0000     0.2735     0.0748
+nu               0.0000     0.2552     0.0651
+c_R              0.0000     0.8995     0.8091
+c_K              0.0000     1.8147     3.2932
+n_K              0.0000     1.3204     1.7436
 
 
 
 MATRIX OF CORRELATIONS
-Variables     y_gap    pi_p       i  r_real      nu     c_R     c_K
-y_gap        1.0000  0.9860 -0.9745 -0.9811 -0.9837  0.9836  1.0000
-pi_p         0.9860  1.0000 -0.9983 -0.9996 -0.9999  0.9999  0.9860
-i           -0.9745 -0.9983  1.0000  0.9995  0.9990 -0.9990 -0.9745
-r_real      -0.9811 -0.9996  0.9995  1.0000  0.9999 -0.9999 -0.9810
-nu          -0.9837 -0.9999  0.9990  0.9999  1.0000 -1.0000 -0.9837
-c_R          0.9836  0.9999 -0.9990 -0.9999 -1.0000  1.0000  0.9836
-c_K          1.0000  0.9860 -0.9745 -0.9810 -0.9837  0.9836  1.0000
+Variables          y_gap    pi_p_ann       i_ann  r_real_ann          nu         c_R         c_K         n_K
+y_gap             1.0000      0.9762      0.9819     -0.9153     -0.9706      0.9674      0.9911      1.0000
+pi_p_ann          0.9762      1.0000      0.9996     -0.9808     -0.9997      0.9993      0.9387      0.9762
+i_ann             0.9819      0.9996      1.0000     -0.9750     -0.9986      0.9979      0.9479      0.9819
+r_real_ann       -0.9153     -0.9808     -0.9750      1.0000      0.9853     -0.9874     -0.8535     -0.9153
+nu               -0.9706     -0.9997     -0.9986      0.9853      1.0000     -0.9999     -0.9300     -0.9706
+c_R               0.9674      0.9993      0.9979     -0.9874     -0.9999      1.0000      0.9251      0.9674
+c_K               0.9911      0.9387      0.9479     -0.8535     -0.9300      0.9251      1.0000      0.9911
+n_K               1.0000      0.9762      0.9819     -0.9153     -0.9706      0.9674      0.9911      1.0000
 
 
 
 COEFFICIENTS OF AUTOCORRELATION
-Order          1       2       3       4       5
-y_gap     0.8796  0.8444  0.8106  0.7782  0.7471
-pi_p      0.9561  0.9179  0.8812  0.8459  0.8121
-i         0.9708  0.9319  0.8947  0.8589  0.8245
-r_real    0.9638  0.9252  0.8882  0.8527  0.8186
-nu        0.9600  0.9216  0.8847  0.8493  0.8154
-c_R       0.9602  0.9218  0.8849  0.8495  0.8155
-c_K       0.8795  0.8443  0.8105  0.7781  0.7470
-Total computing time : 0h00m02s
+Order              1       2       3       4       5
+y_gap         0.7753  0.7133  0.6562  0.6037  0.5554
+pi_p_ann      0.9099  0.8371  0.7701  0.7085  0.6518
+i_ann         0.8970  0.8252  0.7592  0.6985  0.6426
+r_real_ann    0.9591  0.8824  0.8118  0.7469  0.6871
+nu            0.9200  0.8464  0.7787  0.7164  0.6591
+c_R           0.9249  0.8509  0.7829  0.7202  0.6626
+c_K           0.6616  0.6087  0.5600  0.5152  0.4740
+n_K           0.7753  0.7133  0.6562  0.6037  0.5554
+Total computing time : 0h00m00s

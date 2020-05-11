@@ -15,6 +15,10 @@
     c_K
     w_gap
     pi_w
+    i_ann
+    pi_p_ann
+    r_real_ann
+    pi_w_ann
     ;
     
 varexo eps_nu;
@@ -88,6 +92,12 @@ n = labor_share_R*n_R + labor_share_K*n_K;
 y_gap=(1-alpha)*n;
 Epi_p = i(-1)-r_real(-1);
 nu=rho_nu*nu(-1)+eps_nu;
+
+
+i_ann = 4.0*i ;
+pi_p_ann = 4.0*pi_p ;
+r_real_ann = 4.0*r_real ;
+pi_w_ann = 4.0*pi_w ;
 end;
 
 
@@ -110,4 +120,4 @@ check;
 %----------------------------------------------------------------
 % generate IRFs
 %----------------------------------------------------------------
-stoch_simul(order = 1,irf=20) y_gap pi_p i r_real nu c_R c_K;
+stoch_simul(order = 1,irf=20) y_gap pi_p_ann i_ann r_real_ann nu c_R c_K, n_K;

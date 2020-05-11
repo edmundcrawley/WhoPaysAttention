@@ -16,7 +16,7 @@ kappa_p = lambda_p*alpha/(1-alpha) ;
 lambda_w = (1-theta_w)*(1-beta*theta_w)/(theta_w*(1+epsilon_w*phi)) ;
 kappa_w = lambda_w*(sigma + phi/(1-alpha)) ;
 pop_share_K = 0.5;
-debt_limit = 1.0;
+debt_limit = 3.0;
 cons_share_K = (1.0-debt_limit*(1-beta))*pop_share_K*(1.0-alpha)*(epsilon_p-1.0)/epsilon_p;
 cons_share_R = 1.0-cons_share_K;
 labor_share_K = pop_share_K;
@@ -24,6 +24,6 @@ labor_share_R = 1- pop_share_K;
 attention = 0.0001;
 
 %extra params for ARM model
-prin_pay = 0.05 ;     % percentage of principal paid each year
+prin_pay = 0.025 ;     % percentage of principal paid each quarter
 inflation_inertia = 0.0;
 

@@ -18,6 +18,11 @@
 
     real_debt
     max_real_debt
+
+    i_ann
+    pi_p_ann
+    r_real_ann
+    pi_w_ann
     ;
     
 varexo eps_nu;
@@ -88,8 +93,8 @@ r_real=i-pi_p(+1)   ;
 pi_p=pi_w; %inflation_inertia*pi_p(-1) + (1-inflation_inertia)*(beta*pi_p(+1)+kappa_p*y_gap + lambda_p*w_gap);
 pi_w=inflation_inertia*pi_w(-1) + (1-inflation_inertia)*(beta*pi_w(+1)+kappa_w*y_gap - lambda_w*w_gap);
 
-%c_R = c_R(+1) - attention*1/sigma*(i - pi_p(+1)) ;
-c_R=0.0;
+c_R = c_R(+1) - attention*1/sigma*(i - pi_p(+1)) ;
+%c_R=0.0;
 
 real_debt = (1-prin_pay)*(real_debt(-1) - pi_p) + prin_pay*max_real_debt;
 max_real_debt = pi_p(+1) - i/(prin_pay + 1/beta - 1); 
@@ -105,6 +110,11 @@ n = labor_share_R*n_R + labor_share_K*n_K;
 y_gap=(1-alpha)*n;
 Epi_p = i(-1)-r_real(-1);
 nu=rho_nu*nu(-1)+eps_nu;
+
+i_ann = 4.0*i ;
+pi_p_ann = 4.0*pi_p ;
+r_real_ann = 4.0*r_real ;
+pi_w_ann = 4.0*pi_w ;
 end;
 
 
@@ -127,4 +137,4 @@ check;
 %----------------------------------------------------------------
 % generate IRFs
 %----------------------------------------------------------------
-stoch_simul(order = 1,irf=20) y_gap pi_p i r_real nu c_R c_K, max_real_debt, real_debt;
+stoch_simul(order = 1,irf=200) y_gap pi_p_ann i_ann r_real_ann nu c_R c_K, max_real_debt, real_debt, w_gap, n_K;

@@ -33,21 +33,21 @@ function [residual, g1, g2, g3] = InattentionModel_dynamic(y, x, params, steady_
 % Model equations
 %
 
-residual = zeros(13, 1);
+residual = zeros(17, 1);
 lhs =y(7);
 rhs =params(6)*y(8)+params(7)*y(17)+params(8)*y(9)+y(5);
 residual(1)= lhs-rhs;
 lhs =y(10);
-rhs =y(7)-y(18);
+rhs =y(7)-y(22);
 residual(2)= lhs-rhs;
 lhs =y(8);
-rhs =y(18)*params(1)+y(9)*params(14)+params(13)*y(16);
+rhs =y(22)*params(1)+y(9)*params(14)+params(13)*y(16);
 residual(3)= lhs-rhs;
 lhs =y(17);
-rhs =params(1)*y(20)+y(9)*params(16)-y(16)*params(15);
+rhs =params(1)*y(24)+y(9)*params(16)-y(16)*params(15);
 residual(4)= lhs-rhs;
 lhs =y(14);
-rhs =y(19)-(y(7)-y(18))*params(23)/params(4);
+rhs =y(23)-(y(7)-y(22))*params(23)/params(4);
 residual(5)= lhs-rhs;
 lhs =(1-params(18)*(1-params(1)))*y(15);
 rhs =y(16)+y(13)-y(10)*params(1)*params(18)-params(18)*(y(6)-y(8));
@@ -73,8 +73,20 @@ residual(12)= lhs-rhs;
 lhs =y(5);
 rhs =params(3)*y(1)+x(it_, 1);
 residual(13)= lhs-rhs;
+lhs =y(18);
+rhs =y(7)*4.0;
+residual(14)= lhs-rhs;
+lhs =y(19);
+rhs =y(8)*4.0;
+residual(15)= lhs-rhs;
+lhs =y(20);
+rhs =y(10)*4.0;
+residual(16)= lhs-rhs;
+lhs =y(21);
+rhs =y(17)*4.0;
+residual(17)= lhs-rhs;
 if nargout >= 2,
-  g1 = zeros(13, 21);
+  g1 = zeros(17, 25);
 
   %
   % Jacobian matrix
@@ -86,20 +98,20 @@ if nargout >= 2,
   g1(1,9)=(-params(8));
   g1(1,17)=(-params(7));
   g1(2,7)=(-1);
-  g1(2,18)=1;
+  g1(2,22)=1;
   g1(2,10)=1;
   g1(3,8)=1;
-  g1(3,18)=(-params(1));
+  g1(3,22)=(-params(1));
   g1(3,9)=(-params(14));
   g1(3,16)=(-params(13));
   g1(4,9)=(-params(16));
   g1(4,16)=params(15);
   g1(4,17)=1;
-  g1(4,20)=(-params(1));
+  g1(4,24)=(-params(1));
   g1(5,7)=params(23)/params(4);
-  g1(5,18)=(-(params(23)/params(4)));
+  g1(5,22)=(-(params(23)/params(4)));
   g1(5,14)=1;
-  g1(5,19)=(-1);
+  g1(5,23)=(-1);
   g1(6,6)=params(18);
   g1(6,8)=(-params(18));
   g1(6,10)=params(1)*params(18);
@@ -125,20 +137,28 @@ if nargout >= 2,
   g1(12,3)=1;
   g1(13,1)=(-params(3));
   g1(13,5)=1;
-  g1(13,21)=(-1);
+  g1(13,25)=(-1);
+  g1(14,7)=(-4.0);
+  g1(14,18)=1;
+  g1(15,8)=(-4.0);
+  g1(15,19)=1;
+  g1(16,10)=(-4.0);
+  g1(16,20)=1;
+  g1(17,17)=(-4.0);
+  g1(17,21)=1;
 
 if nargout >= 3,
   %
   % Hessian matrix
   %
 
-  g2 = sparse([],[],[],13,441);
+  g2 = sparse([],[],[],17,625);
 if nargout >= 4,
   %
   % Third order derivatives
   %
 
-  g3 = sparse([],[],[],13,9261);
+  g3 = sparse([],[],[],17,15625);
 end
 end
 end

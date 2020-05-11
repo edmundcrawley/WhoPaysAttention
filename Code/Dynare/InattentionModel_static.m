@@ -25,7 +25,7 @@ function [residual, g1, g2, g3] = InattentionModel_static(y, x, params)
 % Warning : this file is generated automatically by Dynare
 %           from model file (.mod)
 
-residual = zeros( 13, 1);
+residual = zeros( 17, 1);
 
 %
 % Model equations
@@ -70,11 +70,23 @@ residual(12)= lhs-rhs;
 lhs =y(1);
 rhs =y(1)*params(3)+x(1);
 residual(13)= lhs-rhs;
+lhs =y(14);
+rhs =y(3)*4.0;
+residual(14)= lhs-rhs;
+lhs =y(15);
+rhs =y(4)*4.0;
+residual(15)= lhs-rhs;
+lhs =y(16);
+rhs =y(6)*4.0;
+residual(16)= lhs-rhs;
+lhs =y(17);
+rhs =y(13)*4.0;
+residual(17)= lhs-rhs;
 if ~isreal(residual)
   residual = real(residual)+imag(residual).^2;
 end
 if nargout >= 2,
-  g1 = zeros(13, 13);
+  g1 = zeros(17, 17);
 
   %
   % Jacobian matrix
@@ -118,6 +130,14 @@ if nargout >= 2,
   g1(12,3)=(-1);
   g1(12,6)=1;
   g1(13,1)=1-params(3);
+  g1(14,3)=(-4.0);
+  g1(14,14)=1;
+  g1(15,4)=(-4.0);
+  g1(15,15)=1;
+  g1(16,6)=(-4.0);
+  g1(16,16)=1;
+  g1(17,13)=(-4.0);
+  g1(17,17)=1;
   if ~isreal(g1)
     g1 = real(g1)+2*imag(g1);
   end
@@ -126,13 +146,13 @@ if nargout >= 3,
   % Hessian matrix
   %
 
-  g2 = sparse([],[],[],13,169);
+  g2 = sparse([],[],[],17,289);
 if nargout >= 4,
   %
   % Third order derivatives
   %
 
-  g3 = sparse([],[],[],13,2197);
+  g3 = sparse([],[],[],17,4913);
 end
 end
 end
