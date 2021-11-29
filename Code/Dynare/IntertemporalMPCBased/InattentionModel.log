@@ -1,0 +1,94 @@
+Starting Dynare (version 4.5.6).
+Starting preprocessing of the model file ...
+Found 6 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+Processing outputs ...
+done
+Preprocessing completed.
+
+
+
+
+Residuals of the static equations:
+
+Equation number 1 : 0
+Equation number 2 : 0
+Equation number 3 : 0
+Equation number 4 : 0
+Equation number 5 : 0
+Equation number 6 : 0
+
+
+
+STEADY-STATE RESULTS:
+
+nu     		 0
+i      		 0
+pi_p   		 0
+y_gap  		 0
+r_real 		 0
+c_R    		 0
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+            0.92             0.92                0
+               1                1                0
+            1.01             1.01                0
+
+
+There are 1 eigenvalue(s) larger than 1 in modulus 
+for 2 forward-looking variable(s)
+
+The rank condition ISN'T verified!
+
+
+MODEL SUMMARY
+
+  Number of variables:         6
+  Number of stochastic shocks: 1
+  Number of state variables:   1
+  Number of jumpers:           2
+  Number of static variables:  3
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables      eps_nu
+eps_nu       0.010000
+
+POLICY AND TRANSITION FUNCTIONS
+                               y_gap          r_real              nu             c_R
+nu(-1)                    -11.500000        0.920000        0.920000      -11.500000
+eps_nu                    -12.500000        1.000000        1.000000      -12.500000
+
+
+THEORETICAL MOMENTS
+VARIABLE         MEAN  STD. DEV.   VARIANCE
+y_gap          0.0000     3.1894    10.1725
+r_real         0.0000     0.2552     0.0651
+nu             0.0000     0.2552     0.0651
+c_R            0.0000     3.1894    10.1725
+
+
+
+MATRIX OF CORRELATIONS
+Variables     y_gap  r_real      nu     c_R
+y_gap        1.0000 -1.0000 -1.0000  1.0000
+r_real      -1.0000  1.0000  1.0000 -1.0000
+nu          -1.0000  1.0000  1.0000 -1.0000
+c_R          1.0000 -1.0000 -1.0000  1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+Order          1       2       3       4       5
+y_gap     0.9200  0.8464  0.7787  0.7164  0.6591
+r_real    0.9200  0.8464  0.7787  0.7164  0.6591
+nu        0.9200  0.8464  0.7787  0.7164  0.6591
+c_R       0.9200  0.8464  0.7787  0.7164  0.6591
+Total computing time : 0h00m00s

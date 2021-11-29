@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2019.8.7)  6 MAR 2020 17:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2019.8.7)  7 JUL 2020 21:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1482,7 +1482,7 @@ LaTeX Info: Redefining \includegraphics on input line 83.
 ap}]
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 113.
+(Font)              size <5> substituted on input line 105.
 
 [2
 
@@ -1491,147 +1491,141 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 ] [4
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 138.
+LaTeX Font Info:    Try loading font information for U+msa on input line 120.
 
 (c:/Program Files (x86)/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 138.
+LaTeX Font Info:    Try loading font information for U+msb on input line 120.
 
 (c:/Program Files (x86)/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 138.
+line 120.
 
 (c:/Program Files (x86)/texlive/2014/texmf-dist/tex/latex/sansmathaccent/ot1mat
 hkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
-) [5
+)
+<../../Code/Dynare/Figures/MotivatingExample.jpg, id=128, 1254.6875pt x 470.758
+74pt>
+File: ../../Code/Dynare/Figures/MotivatingExample.jpg Graphic file (type jpg)
+ <use ../../Code/Dynare/Figures/MotivatingExample.jpg>
+Package pdftex.def Info: ../../Code/Dynare/Figures/MotivatingExample.jpg used o
+n input line 120.
+(pdftex.def)             Requested size: 276.559pt x 103.76118pt.
 
-]
+Overfull \vbox (9.8103pt too high) detected at line 120
+ []
 
-Package natbib Warning: Citation `madrian_power_2001' on page 6 undefined on in
-put line 148.
+[5
+
+ <../../Code/Dynare/Figures/MotivatingExample.jpg>]
+File: ../../Code/Dynare/Figures/MotivatingExample.jpg Graphic file (type jpg)
+
+<use ../../Code/Dynare/Figures/MotivatingExample.jpg>
+Package pdftex.def Info: ../../Code/Dynare/Figures/MotivatingExample.jpg used o
+n input line 120.
+(pdftex.def)             Requested size: 276.559pt x 103.76118pt.
+
+Overfull \vbox (9.8103pt too high) detected at line 120
+ []
 
 [6
 
-] [7
+]
+File: ../../Code/Dynare/Figures/MotivatingExample.jpg Graphic file (type jpg)
+ <use ../../Code/Dynare/Figures/MotivatingExample.jpg>
+Package pdftex.def Info: ../../Code/Dynare/Figures/MotivatingExample.jpg used o
+n input line 120.
+(pdftex.def)             Requested size: 276.559pt x 103.76118pt.
+
+Overfull \vbox (9.8103pt too high) detected at line 120
+ []
+
+[7
 
 ] [8
 
 ] [9
 
-]
-Overfull \vbox (1.82918pt too high) detected at line 186
- []
-
-[10
+] [10
 
 ] [11
 
 ] [12
 
+] [13
+
 ]
-<../../Code/HARK/Figures/CostofInattention.pdf, id=324, 433.62pt x 289.08pt>
+<../../Code/HARK/Figures/CostofInattention.pdf, id=306, 433.62pt x 289.08pt>
 File: ../../Code/HARK/Figures/CostofInattention.pdf Graphic file (type pdf)
 
 <use ../../Code/HARK/Figures/CostofInattention.pdf>
 Package pdftex.def Info: ../../Code/HARK/Figures/CostofInattention.pdf used on 
-input line 208.
+input line 229.
 (pdftex.def)             Requested size: 307.28987pt x 204.86888pt.
- [13
+ [14
 
- <../../Code/HARK/Figures/CostofInattention.pdf>] [14
-
-] [15
-
-] [16
+ <../../Code/HARK/Figures/CostofInattention.pdf>] [15
 
 ]
-<../../Code/Dolo/Figures/shock.pdf, id=451, 433.62pt x 289.08pt>
-File: ../../Code/Dolo/Figures/shock.pdf Graphic file (type pdf)
+<../../Code/Dynare/Figures/NominalRate.jpg, id=382, 878.28125pt x 658.46pt>
+File: ../../Code/Dynare/Figures/NominalRate.jpg Graphic file (type jpg)
 
-<use ../../Code/Dolo/Figures/shock.pdf>
-Package pdftex.def Info: ../../Code/Dolo/Figures/shock.pdf used on input line 2
-39.
-(pdftex.def)             Requested size: 138.2795pt x 92.18547pt.
+<use ../../Code/Dynare/Figures/NominalRate.jpg>
+Package pdftex.def Info: ../../Code/Dynare/Figures/NominalRate.jpg used on inpu
+t line 248.
+(pdftex.def)             Requested size: 276.559pt x 207.34567pt.
 
-<../../Code/Dolo/Figures/output_gap.pdf, id=452, 433.62pt x 289.08pt>
-File: ../../Code/Dolo/Figures/output_gap.pdf Graphic file (type pdf)
+Overfull \vbox (5.66559pt too high) detected at line 248
+ []
 
-<use ../../Code/Dolo/Figures/output_gap.pdf>
-Package pdftex.def Info: ../../Code/Dolo/Figures/output_gap.pdf used on input l
-ine 239.
-(pdftex.def)             Requested size: 138.2795pt x 92.18547pt.
+[16
 
-<../../Code/Dolo/Figures/real_rate.pdf, id=453, 433.62pt x 289.08pt>
-File: ../../Code/Dolo/Figures/real_rate.pdf Graphic file (type pdf)
+ <../../Code/Dynare/Figures/NominalRate.jpg>]
+<../../Code/Dynare/Figures/OutputGap.jpg, id=401, 878.28125pt x 658.46pt>
+File: ../../Code/Dynare/Figures/OutputGap.jpg Graphic file (type jpg)
 
-<use ../../Code/Dolo/Figures/real_rate.pdf>
-Package pdftex.def Info: ../../Code/Dolo/Figures/real_rate.pdf used on input li
-ne 239.
-(pdftex.def)             Requested size: 138.2795pt x 92.18547pt.
+<use ../../Code/Dynare/Figures/OutputGap.jpg>
+Package pdftex.def Info: ../../Code/Dynare/Figures/OutputGap.jpg used on input 
+line 256.
+(pdftex.def)             Requested size: 138.2795pt x 103.6678pt.
 
-<../../Code/Dolo/Figures/nominal_rate.pdf, id=454, 433.62pt x 289.08pt>
-File: ../../Code/Dolo/Figures/nominal_rate.pdf Graphic file (type pdf)
+<../../Code/Dynare/Figures/RealRate.jpg, id=402, 890.32625pt x 661.47125pt>
+File: ../../Code/Dynare/Figures/RealRate.jpg Graphic file (type jpg)
 
-<use ../../Code/Dolo/Figures/nominal_rate.pdf>
-Package pdftex.def Info: ../../Code/Dolo/Figures/nominal_rate.pdf used on input
- line 239.
-(pdftex.def)             Requested size: 138.2795pt x 92.18547pt.
+<use ../../Code/Dynare/Figures/RealRate.jpg>
+Package pdftex.def Info: ../../Code/Dynare/Figures/RealRate.jpg used on input l
+ine 256.
+(pdftex.def)             Requested size: 138.2795pt x 102.72884pt.
+
+<../../Code/Dynare/Figures/UnconstrainedConsumption.jpg, id=403, 878.28125pt x 
+658.46pt>
+File: ../../Code/Dynare/Figures/UnconstrainedConsumption.jpg Graphic file (type
+ jpg)
+ <use ../../Code/Dynare/Figures/UnconstrainedConsumption.jpg>
+Package pdftex.def Info: ../../Code/Dynare/Figures/UnconstrainedConsumption.jpg
+ used on input line 256.
+(pdftex.def)             Requested size: 138.2795pt x 103.6678pt.
+
+<../../Code/Dynare/Figures/Inflation.jpg, id=404, 890.32625pt x 661.47125pt>
+File: ../../Code/Dynare/Figures/Inflation.jpg Graphic file (type jpg)
+
+<use ../../Code/Dynare/Figures/Inflation.jpg>
+Package pdftex.def Info: ../../Code/Dynare/Figures/Inflation.jpg used on input 
+line 256.
+(pdftex.def)             Requested size: 138.2795pt x 102.72884pt.
  [17
 
- <../../Code/Dolo/Figures/shock.pdf> <../../Code/Dolo/Figures/output_gap.pdf
-
-pdfTeX warning: pdflatex.exe (file ../../Code/Dolo/Figures/output_gap.pdf): PDF
- inclusion: multiple pdfs with page group included in a single page
-> <../../Code/Dolo/Figures/real_rate.pdf
-
-pdfTeX warning: pdflatex.exe (file ../../Code/Dolo/Figures/real_rate.pdf): PDF 
-inclusion: multiple pdfs with page group included in a single page
-> <../../Code/Dolo/Figures/nominal_rate.pdf
-
-pdfTeX warning: pdflatex.exe (file ../../Code/Dolo/Figures/nominal_rate.pdf): P
-DF inclusion: multiple pdfs with page group included in a single page
->] <../../Code/Dolo/Figures/constrained.pdf, id=594, 433.62pt x 289.08pt>
-File: ../../Code/Dolo/Figures/constrained.pdf Graphic file (type pdf)
-
-<use ../../Code/Dolo/Figures/constrained.pdf>
-Package pdftex.def Info: ../../Code/Dolo/Figures/constrained.pdf used on input 
-line 246.
-(pdftex.def)             Requested size: 138.2795pt x 92.18547pt.
-
-<../../Code/Dolo/Figures/unconstrained.pdf, id=595, 433.62pt x 289.08pt>
-File: ../../Code/Dolo/Figures/unconstrained.pdf Graphic file (type pdf)
-
-<use ../../Code/Dolo/Figures/unconstrained.pdf>
-Package pdftex.def Info: ../../Code/Dolo/Figures/unconstrained.pdf used on inpu
-t line 246.
-(pdftex.def)             Requested size: 138.2795pt x 92.18547pt.
-
-<../../Code/Dolo/Figures/inflation.pdf, id=596, 433.62pt x 289.08pt>
-File: ../../Code/Dolo/Figures/inflation.pdf Graphic file (type pdf)
-
-<use ../../Code/Dolo/Figures/inflation.pdf>
-Package pdftex.def Info: ../../Code/Dolo/Figures/inflation.pdf used on input li
-ne 246.
-(pdftex.def)             Requested size: 138.2795pt x 92.18547pt.
- [18
-
- <../../Code/Dolo/Figures/constrained.pdf> <../../Code/Dolo/Figures/unconstrain
-ed.pdf
-
-pdfTeX warning: pdflatex.exe (file ../../Code/Dolo/Figures/unconstrained.pdf): 
-PDF inclusion: multiple pdfs with page group included in a single page
-> <../../Code/Dolo/Figures/inflation.pdf
-
-pdfTeX warning: pdflatex.exe (file ../../Code/Dolo/Figures/inflation.pdf): PDF 
-inclusion: multiple pdfs with page group included in a single page
->]
+ <../../Code/Dynare/Figures/OutputGap.jpg> <../../Code/Dynare/Figures/RealRate.
+jpg> <../../Code/Dynare/Figures/UnconstrainedConsumption.jpg> <../../Code/Dynar
+e/Figures/Inflation.jpg>]
 \mytempbib=\box109
- (./WhoPaysAttention_slides.bbl
+
+(./WhoPaysAttention_slides.bbl
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <10.95> not available
 (Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 15.
@@ -1651,31 +1645,27 @@ Underfull \hbox (badness 3333) in paragraph at lines 15--17
 \tf@snm=\write10
 \openout10 = `WhoPaysAttention_slides.snm'.
 
-
-
-Package natbib Warning: There were undefined citations.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 255.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 255.
-(./WhoPaysAttention_slides.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 255.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 255.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 264.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 264.
+ (./WhoPaysAttention_slides.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 264.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 264.
 Package rerunfilecheck Info: File `WhoPaysAttention_slides.out' has not changed
 .
-(rerunfilecheck)             Checksum: A58B6D564698EC8157958FF81B4B7BAA;192.
+(rerunfilecheck)             Checksum: 0C2204560E99F17C6785CFE3A44257CE;145.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 255.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 264.
  ) 
 Here is how much of TeX's memory you used:
- 32900 strings out of 493117
- 696560 string characters out of 6130075
- 801152 words of memory out of 5000000
- 35673 multiletter control sequences out of 15000+600000
- 11341 words of font info for 41 fonts, out of 8000000 for 9000
+ 32881 strings out of 493117
+ 696311 string characters out of 6130075
+ 799298 words of memory out of 5000000
+ 35658 multiletter control sequences out of 15000+600000
+ 11047 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  61i,19n,95p,10441b,755s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/Program Files (x86)/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
@@ -1683,14 +1673,16 @@ m/cmmi10.pfb><c:/Program Files (x86)/texlive/2014/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmss10.pfb><c:/Program Files (x86)/texlive/2014/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmss12.pfb><c:/Program Files (x86)/texlive/2014/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/Program Files (x86)/texlive/20
-14/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/Program Files (x8
-6)/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><c:/Progr
-am Files (x86)/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b>
-Output written on WhoPaysAttention_slides.pdf (18 pages, 173323 bytes).
+14/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><c:/Program Files (x86
+)/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb><c:/Program
+ Files (x86)/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+<c:/Program Files (x86)/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy8.pfb><c:/Program Files (x86)/texlive/2014/texmf-dist/fonts/type1/public/am
+sfonts/symbols/msbm10.pfb>
+Output written on WhoPaysAttention_slides.pdf (17 pages, 343980 bytes).
 PDF statistics:
- 745 PDF objects out of 1000 (max. 8388607)
- 472 compressed objects within 5 object streams
- 41 named destinations out of 1000 (max. 500000)
- 157 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 467 PDF objects out of 1000 (max. 8388607)
+ 368 compressed objects within 4 object streams
+ 38 named destinations out of 1000 (max. 500000)
+ 144 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -48,7 +48,7 @@
 \mode<presentation>{}
 %% preamble
 \title[Who Pays Attention to Euler?]{Who Pays Attention to Euler?}
-\author{Edmund Crawley}
+\author{Edmund Crawley and Fabian Winkler}
 %\date[03/05/2020]{March, 2020}
 \date[03/05/2020]{}
 \usetheme{Frankfurt}
@@ -93,60 +93,80 @@
 \addtocounter{framenumber}{-1}
 \section{Introduction}
 \setbeamercovered{invisible}
+\frame{
+\frametitle{Mortgages and monetary policy transmission}
+\begin{itemize}
+\item In partial equilibrium models, mortgages play an important role in monetary policy transmission\\
+e.g. \cite{wong_population_2016}, \cite{berger_prepayment_2018}, \cite{eichenbaum_refinance_2018}\pause
+\item BUT in general equilibrium monetary policy doesn't move long real rates by much, so mortgages do not play a role\\
+e.g \cite{greenwald_mortgage_2018}, \cite{garriga_monk_2019}\pause
+\end{itemize}
+ This tension in the literature has to do with intertemporal substitution.
+}
+
+\frame{
+	\frametitle{The Euler Equation}
+	$u'(c_t) = \beta R_{t+1} \mathbb{E}u'(c_{t+1})$ \\
+\pause
+\bigskip
+Partial equilibrium example: Real rate goes up 1\% for one year\\
+\includegraphics[width=0.9\textwidth]{../../Code/Dynare/Figures/MotivatingExample.jpg}\\
+Consumption of a HH with \$100k annual income goes down nearly \$500 (IES = 0.5) \\
+\pause
+\bigskip
+BUT: This change in behavior is worth just \$2.50 to the household\\
+\bigskip
+Canonical monetary policy models work via an incentive that is worth less than a cup of coffee
+}
+
+\frame{
+\frametitle{Evidence for Intertemporal Substitution}
+\begin{itemize}
+\item Macro: Complete failure of relation between real rates and consumption growth
+\item Micro: No convincing evidence interest rate incentives incite intertemporal substitution
+\item 30-year treasury down almost 2 percentage points since Nov 2018 $\implies$ I should increase consumption by over 10\% today (all else equal)
+\item When I ask financial advisors how interest rates change their saving advice, they look at me like I'm crazy!
+\item Evidence from default pension saving: people really don't pay attention to this decision - \cite{madrian_power_2001}
+\end{itemize}
+}
+
 \frame
 {
 	\frametitle{Interest Rates: For Whom is Inattention Costly?}
 	Main Idea:
 	\begin{itemize}
-		\item Entirely rational for unconstrained households to ignore interest rates (second order)
+		\item Entirely rational for unconstrained households to ignore interest rates 
 		\item Constrained agents \textit{cannot} ignore interest rates: they directly determine constraints
-		\item Refincing decisions are not ignored: they are first order
+		\item Mortgage refinancing decisions are not ignored
 	\end{itemize}
 	\pause
 	\bigskip
-	I examine a Two Agent New Keynesian model in which
+	We examine a Two Agent New Keynesian (TANK) model in which
 	\begin{itemize}
 		\item Unconstrained agents are inattentive
 		\item Constrained agents are attentive
-		\item Add refinancing a la \cite{greenwald_mortgage_2018}
+		\item Refinancing decisions are made \`a la \cite{greenwald_mortgage_2018}
 	\end{itemize}
 }
 \frame{
 \frametitle{Implications}
 Puzzles resolved:
 \begin{itemize}
-	\item No Forward Guidance Puzzle
-	\item Fed has control on long term real rates
-	\item Hump shaped consumption response
+	\item Monetary policy affects long term real rates
+	\item Mortgages matter for policy transmission
+	\item Forward Guidance puzzle disappears ($\approx$ Euler eq. discounting)
 \end{itemize}
 \bigskip
 Policy Implications:
 \begin{itemize}
+%FW: These two bullets are still a bit mysterious to me
 	\item Monetary Policy acts through redistribution (and investment)
 	\item Much closer relation to fiscal policy
-	\item Need to think through all implications
 \end{itemize}
 }
-\frame{
-\frametitle{Relation to Literature}
-\begin{itemize}
-\item \cite{wong_population_2016}, \cite{berger_prepayment_2018}, \cite{eichenbaum_refinance_2018}. Partial Equilibrium $\implies$ mortgages play an important role in monetary policy. Rely on long-term real rate changes.
-\item \cite{greenwald_mortgage_2018}, \cite{garriga_monk_2019}. General equilibrium New Keynesian $\implies$ Mortgages do not play a role, long real rates don't move.
-\item Rational Inattention literature $\implies$ hump shape responses BUT no heterogeneity in inattention.
-\item Attention to refincing, Inattention to intertemporal substitution, can resolve these tensions in the literature.
-\end{itemize}
-}
-\frame{
-\frametitle{Evidence for Consumption Intertemporal Substitution}
-\begin{itemize}
-\item Macro: Complete failure of relation between real rates and consumption growth
-\item Micro: No convincing evidence households respond to interest rate incentives
-\item Sheer size of real interest rate movements: 30 year treasury down almost 2 percentage points since Nov 2018 $\implies$ I should increase consumption byover 10\% today (all else equal)
-\item Evidence from asking financial advisors: when asked interest rates change their saving advice, they look at me like I'm crazy!
-\item Evidence from default pension saving - people really don't pay attention to this decision! \cite{madrian_power_2001}
-\end{itemize}
-}
+
 \section{Costs of Inattention}
+\begin{comment}
 \frame{
 \frametitle{Costs of Inattention: A Two-Period Example}
 Consider a two period model with consumer maximizing:
@@ -184,6 +204,7 @@ C_2 =  Y
 \end{align*}
 If you didn't notice this, loss to utility would be \textbf{first order}.
 }
+\end{comment}
 \frame{
 \frametitle{Costs of Inattention: A Numerical Example}
 Model:
@@ -206,18 +227,7 @@ What are the costs of in inattention to the interest rate shock with regards to:
 \centering
 \includegraphics[width=\textwidth]{../../Code/HARK/Figures/CostofInattention.pdf}
 }
-\section{Fwd Guidance}
-\frame{
-\frametitle{Forward Guidance}
-What is the effect of a shock to the short-term real rate 5 years in the future?\\
-\pause
-\bigskip
-Intertemporal Substitution: Spending up for 5 years, then down thereafter. In general equilbrium $\implies$ positive output gap for 5 years $\implies$ huge inflation!\\
-Effect is MUCH greater than a shock to the short-term rate today\\
-\bigskip
-Refinancing: Spending up today, but short-lived effect.\\
-Effect is similar size (or smaller) than a shock to the short-term rate today
-}
+
 \section{NK Model}
 \frame{
 \frametitle{A Two-Agent NK model with Debt}
@@ -229,22 +239,21 @@ Two agents:
 \bigskip
 Shock to Taylor Rule is VERY persistent
 }
-\frame{
-\frametitle{Implulse Respnse Functions}
-\centering
-	\includegraphics[width=0.45\textwidth]{../../Code/Dolo/Figures/shock.pdf}
-	\includegraphics[width=0.45\textwidth]{../../Code/Dolo/Figures/output_gap.pdf}\\
-	\includegraphics[width=0.45\textwidth]{../../Code/Dolo/Figures/real_rate.pdf}
-	\includegraphics[width=0.45\textwidth]{../../Code/Dolo/Figures/nominal_rate.pdf}
-}
-\frame{
-\frametitle{Implulse Respnse Functions}
-\centering
-	\includegraphics[width=0.45\textwidth]{../../Code/Dolo/Figures/constrained.pdf}
-	\includegraphics[width=0.45\textwidth]{../../Code/Dolo/Figures/unconstrained.pdf}\\
-	\includegraphics[width=0.45\textwidth]{../../Code/Dolo/Figures/inflation.pdf}
-}
 
+\frame{
+\frametitle{Impulse Responses to Persistent Monetary Shock}
+Nominal Rate Moves in Opposite Directions
+\centering
+	\includegraphics[width=0.9\textwidth]{../../Code/Dynare/Figures/NominalRate.jpg}
+}
+\frame{
+\frametitle{Impulse Responses to Persistent Monetary Shock}
+\centering
+	\includegraphics[width=0.45\textwidth]{../../Code/Dynare/Figures/OutputGap.jpg}
+	\includegraphics[width=0.45\textwidth]{../../Code/Dynare/Figures/RealRate.jpg}\\
+	\includegraphics[width=0.45\textwidth]{../../Code/Dynare/Figures/UnconstrainedConsumption.jpg}
+	\includegraphics[width=0.45\textwidth]{../../Code/Dynare/Figures/Inflation.jpg}
+}
 
 
 \bibliographystyle{\econtexBibStyle}

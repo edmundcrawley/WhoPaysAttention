@@ -79,19 +79,30 @@ set_param_value('attention',attention);
 %----------------------------------------------------------------
 
 model(linear); 
+
+% Taylor Rule
 i = phi_pi_p*pi_p + phi_pi_w*pi_w + phi_y*y_gap + nu ;
+
+% Fisher Equation
 r_real=i-pi_p(+1)   ;
-pi_p=beta*pi_p(+1)+kappa_p*y_gap + lambda_p*w_gap;
-pi_w=beta*pi_w(+1)+kappa_w*y_gap - lambda_w*w_gap;
+
+% Price and wage Philips Curves
+pi_p=0.0*(pi_p(-1))+ 1.0*(beta*pi_p(+1)+kappa_p*y_gap + lambda_p*w_gap);
+pi_w=0.0*(pi_w(-1))+ 1.0*(beta*pi_w(+1)+kappa_w*y_gap - lambda_w*w_gap);
+
+% Euler equation for unconstrained
 c_R = c_R(+1) - attention*1/sigma*(i - pi_p(+1)) ;
+
+% Budget constraint for  constrained agents
 (1-debt_limit*(1-beta))*c_K = w_gap + n_K  - beta*debt_limit*r_real - debt_limit*(Epi_p-pi_p);
+
 w_gap = w_gap(-1) + pi_w - pi_p;
 n_R = n_K;
 y_gap = cons_share_R*c_R + cons_share_K*c_K;
 n = labor_share_R*n_R + labor_share_K*n_K;
 y_gap=(1-alpha)*n;
 Epi_p = i(-1)-r_real(-1);
-nu=rho_nu*nu(-1)+eps_nu;
+nu=rho_nu*nu(-1)+eps_nu(0);
 
 
 i_ann = 4.0*i ;
@@ -120,4 +131,4 @@ check;
 %----------------------------------------------------------------
 % generate IRFs
 %----------------------------------------------------------------
-stoch_simul(order = 1,irf=20) y_gap pi_p_ann i_ann r_real_ann nu c_R c_K, n_K;
+stoch_simul(order = 1,irf=40) y_gap pi_p_ann i_ann r_real_ann nu c_R c_K, n_K;

@@ -59,8 +59,10 @@ pi_w_ann   		 0
 EIGENVALUES:
          Modulus             Real        Imaginary
 
-       4.391e-20       -4.391e-20                0
-        1.07e-15         1.07e-15                0
+               0                0                0
+               0                0                0
+       4.887e-19        4.887e-19                0
+       1.025e-13        1.025e-13                0
        8.717e-05        8.717e-05                0
             0.92             0.92                0
            1.039            1.034           0.1037
@@ -78,7 +80,7 @@ MODEL SUMMARY
 
   Number of variables:         17
   Number of stochastic shocks: 1
-  Number of state variables:   4
+  Number of state variables:   6
   Number of jumpers:           3
   Number of static variables:  10
 
