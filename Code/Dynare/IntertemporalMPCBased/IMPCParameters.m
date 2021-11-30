@@ -11,7 +11,7 @@ sigma = 2;
 attention = 0;
 
 % For LTDebt
-theta = 0.9;
+theta = 0.95;
 Bp_bar = 1.0/(r_bar - theta);
 A_bar = debt_limit/((1-theta)*Bp_bar);
 M_K_bar = -A_bar + 1;
