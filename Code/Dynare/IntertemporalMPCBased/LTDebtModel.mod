@@ -65,8 +65,8 @@ r_real = nu;
 r_real=i -pi_p(+1) ;
 
 % Price and wage Philips Curves
-%pi_p=0.6*pi_p(-1) + 0.4*(0.99*pi_p(+1)+0.02*n_K) ;
-pi_p = 0.0;
+pi_p=0.6*pi_p(-1) + 0.4*(0.99*pi_p(+1)+0.02*n_K) ;
+%pi_p = 0.0;
 
 % IMPC for R
 %c_R = mpc_R * (m_R + f_R);

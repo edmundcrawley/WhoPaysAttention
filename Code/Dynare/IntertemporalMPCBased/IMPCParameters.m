@@ -7,6 +7,9 @@ mpc_R = 1-beta;
 mpc_K = 0.15;
 r_bar = 1/beta;
 
+sigma = 2;
+attention = 0;
+
 % For LTDebt
 theta = 0.9;
 Bp_bar = 1.0/(r_bar - theta);
