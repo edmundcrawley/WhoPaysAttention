@@ -20,7 +20,7 @@ dynare LTDebtModel.mod noclearall nograph;
 LT_debt_IRFs = oo_.irfs;
 
 max_T = 15;
-Model = "LT_debt";
+Model = "SS";
 if Model=="SS"
     IRFs = SS_IRFs;
     Model_Name = "Saver Spender";
