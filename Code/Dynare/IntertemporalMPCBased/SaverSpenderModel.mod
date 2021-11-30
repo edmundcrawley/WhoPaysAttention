@@ -38,7 +38,7 @@ r_real=i -pi_p(+1) ;
 % Euler for R
 c_R = c_R(+1) - attention*1/sigma*(i - pi_p(+1)) ;
 % Budget constraint for K
-(1-debt_limit*(r_bar-1))*c_K = n_K  - debt_limit*r_real(-1) ;
+(1-debt_limit*(r_bar-1))*c_K = n_K  - r_bar*debt_limit*r_real(-1) ;
 
 n_R = n_K;
 

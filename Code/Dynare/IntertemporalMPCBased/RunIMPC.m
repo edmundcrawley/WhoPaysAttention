@@ -72,6 +72,18 @@ ylabel("Real Interest Rate")
 title(Model_Name +" Model, Real Interest Rate")
 saveas(gcf,"../Figures/RealRate" + Model + ".jpg")
 
+figure;
+plot([-1:max_T],[0,0,IRFs.i_ann_eps_nu(1:max_T)],'Linewidth',2, 'color','blue','linestyle','-');
+if Model=="SS"
+    hold;
+    plot([-1:max_T],[0,0,SS_IRFs_attn.i_ann_eps_nu(1:max_T)],'Linewidth',2, 'color','blue','linestyle','--');
+    legend("Inattention","Attention")
+end
+xlabel("Quarter")
+ylabel("Nominal Interest Rate")
+title(Model_Name +" Model, Nominal Interest Rate")
+saveas(gcf,"../Figures/NominalRate" + Model + ".jpg")
+
 
 % 
 % % silly thought experiment: infinitely lived agent, $100,000/year beta =

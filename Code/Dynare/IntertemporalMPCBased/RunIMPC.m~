@@ -20,7 +20,7 @@ dynare LTDebtModel.mod noclearall nograph;
 LT_debt_IRFs = oo_.irfs;
 
 max_T = 15;
-Model = "SS";
+Model = "IMPC";
 if Model=="SS"
     IRFs = SS_IRFs;
     Model_Name = "Saver Spender";
@@ -61,16 +61,28 @@ title(Model_Name +" Model, Consumption")
 saveas(gcf,"../Figures/Consumption" + Model + ".jpg")
 
 figure;
-plot([-1:max_T],[0,0,IRFs.pi_p_ann_eps_nu(1:max_T)],'Linewidth',2, 'color','blue','linestyle','-');
+plot([-1:max_T],[0,0,IRFs.r_real_ann_eps_nu(1:max_T)],'Linewidth',2, 'color','blue','linestyle','-');
 if Model=="SS"
     hold;
-    plot([-1:max_T],[0,0,SS_IRFs_attn.pi_p_ann_eps_nu(1:max_T)],'Linewidth',2, 'color','blue','linestyle','--');
+    plot([-1:max_T],[0,0,SS_IRFs_attn.r_real_ann_eps_nu(1:max_T)],'Linewidth',2, 'color','blue','linestyle','--');
     legend("Inattention","Attention")
 end
 xlabel("Quarter")
-ylabel("Inflation")
-title(Model_Name +" Model, Inflation")
-saveas(gcf,"../Figures/Inflation" + Model + ".jpg")
+ylabel("Real Interest Rate")
+title(Model_Name +" Model, Real Interest Rate")
+saveas(gcf,"../Figures/RealRate" + Model + ".jpg")
+
+figure;
+plot([-1:max_T],[0,0,IRFs.i_ann_eps_nu(1:max_T)],'Linewidth',2, 'color','blue','linestyle','-');
+if Model=="SS"
+    hold;
+    plot([-1:max_T],[0,0,SS_IRFs_attn.i_ann_eps_nu(1:max_T)],'Linewidth',2, 'color','blue','linestyle','--');
+    legend("Inattention","Attention")
+end
+xlabel("Quarter")
+ylabel("Nominal Interest Rate")
+title(Model_Name +" Model, Nominal Interest Rate")
+saveas(gcf,"../Figures/NominalRate" + Model + ".jpg")
 
 
 % 
