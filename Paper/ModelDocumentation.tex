@@ -82,12 +82,12 @@ where $n_K$ is hours worked and $\bar{R}$ is the steady-state interest rate. Thi
 	\includegraphics[width=0.45\textwidth]{../Code/Dynare/Figures/ConsumptionSS.jpg}
 	\includegraphics[width=0.45\textwidth]{../Code/Dynare/Figures/InflationSS.jpg}
 	\caption{Impulse Response Functions to Saver Spender Model}
-	\label{fig:IFRSS}
+	\label{fig:IRFSS}
 \end{figure}
 
 Figure \ref{fig:IRFSS} shows the impulse response functions for this model under both attention and inattention to interest rates for the model in which the real rate is shocked directly. The lower-left panel on consumption for the two agent types is the most informative. The solid lines show the inattention version of the model. First, the saver in this model does not adjust consumption at all in response to the real interest rate change. Second, the spender adjusts consumption in the period after the shock when they have to pay a higher interest rate on their previous borrowing. The dashed lines show the model with attention. In this case, the saver adjust their consumption immediately on the interest rate news, and this reduces output which results in the spender also adjusting their consumption by the same amount. In the following period, the spender further reduces their spending as their budget constraint is hit with the higher interest rate, while the spender follows their Euler equation back to steady state.
 
-\section{Model 2: An "Intertemporal MPC" Model}
+\section{Model 2: An ``Intertemporal MPC'' Model}
 
 One problem with the saver-spender model is that it assumes the spender has an MPC of one, so there is not much room for interesting dynamics in the model. We would like to have a realistic model for different agents intertemporal MPC, or "iMPC" from Auclert, Ronglie and Straub "Intertemporal Keynesian Cross". 
 
@@ -103,8 +103,8 @@ where $c_t$ is the deviation in steady-state consumption, $\text{mpc}$ is the ag
 
 The state variables follow the law of motion:
 \begin{align}
-	m_t = a_{t-1}r_bar + n_t + \bar{A} r_{t-1}\\
-	a_t = m_t - c_t
+	m_t = a_{t-1}\bar{R} + n_t + \bar{A} r_{t-1}\\
+	a_t = m_t - c_t \\
 	f_t = \frac{1}{\Gamma} (n_{t+1} +\bar{A}r_t + f_{t+1} ) 
 \end{align}
 where $a_t$ is end-of-period assets and $\Gamma$ is the discounting applied to future cash flows. $\bar{A}$ is the steady state level of assets (or debt) held by this agent type. In aggregate, the sum of all assets is zero.
@@ -117,10 +117,10 @@ The specific model used makes use of two agents of this type, we'll call them sa
 	\includegraphics[width=0.45\textwidth]{../Code/Dynare/Figures/ConsumptionIMPC.jpg}
 	\includegraphics[width=0.45\textwidth]{../Code/Dynare/Figures/InflationIMPC.jpg}
 	\caption{Impulse Response Functions to iMPC Model}
-	\label{fig:IFRIMPC}
+	\label{fig:IRFIMPC}
 \end{figure}
 
-Figure \ref{fig:IFRIMPC} shows the impulse response for this model. The real interest rate path is the same as in the saver-spender model, as is the consumption behavior of the `spender' who does not react to the shock. The key innovation in this model is the slow response of the `spender' consumption to the interest rate shock. While the real interest rate spikes up and then decays back to zero, the consumption of the spender reaches a peak 7 or 8 quarters out. This smoothed response is a result to two factors: i) the MPC is less than one, so the higher interest rate reduces spending both in the quarter it occurs and forward, and ii) the spenders do not react in advance to the fact they will expect lower cash flows in the future.
+Figure \ref{fig:IRFIMPC} shows the impulse response for this model. The real interest rate path is the same as in the saver-spender model, as is the consumption behavior of the `spender' who does not react to the shock. The key innovation in this model is the slow response of the `spender' consumption to the interest rate shock. While the real interest rate spikes up and then decays back to zero, the consumption of the spender reaches a peak 7 or 8 quarters out. This smoothed response is a result to two factors: i) the MPC is less than one, so the higher interest rate reduces spending both in the quarter it occurs and forward, and ii) the spenders do not react in advance to the fact they will expect lower cash flows in the future.
 
 \section{Model 3: Long term debt}
 
@@ -137,7 +137,7 @@ The IRFs are shown in figure \ref{fig:IRFLT}. Here, although the spender has an 
 	\includegraphics[width=0.45\textwidth]{../Code/Dynare/Figures/ConsumptionLT_debt.jpg}
 	\includegraphics[width=0.45\textwidth]{../Code/Dynare/Figures/InflationLT_debt.jpg}
 	\caption{Impulse Response Functions to Long term debt Model}
-	\label{fig:IFRLT}
+	\label{fig:IRFLT}
 \end{figure}
 
 \section{Thoughts}
