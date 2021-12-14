@@ -26,7 +26,7 @@ dynare BUModel.mod noclearall nograph;
 BU_IRFs_attn = oo_.irfs;
 
 max_T = 15;
-Model = "BU";
+Model = "IMPC";
 if Model=="SS"
     IRFs = SS_IRFs;
     Model_Name = "Saver Spender";
