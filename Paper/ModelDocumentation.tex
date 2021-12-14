@@ -155,6 +155,24 @@ There is also a difference in how mark-to-market differs between assets and debt
 
 All the models above abstract from financing of durables/houses.  We could apply this lens to the MoNK model of Garriga et al. \cite{garriga_monk_2019} or to Greenwald's JMP \cite{greenwald_mortgage_2018}. These papers inherit the fact that long term real rates are little changed by monetary policy, so their results are about monetary policy shocks to the long term inflation rate. I think our approach could give the CB more leverage over the real long term interest rate.
 
+\section{Model 3: Bonds in the Utility Function}
+
+This model also have a saver and a spender. The saver behaves as in the saver-spender model. The spender has a `bonds in the utility' utility function, in which they get utility for wealth holding above the debt limit. The linearized equation that results is:
+\begin{align}
+	c_{K,t} = 0.9 c_{K,t+1} + 0.5 a_{K,t}   - \mathds{1}_{\text{attention}} \frac{1}{\sigma}r_t
+\end{align}
+See appendix C.3 of Wolf (2021) http://economics.mit.edu/files/22579.
+
+The IRFs from this model are in figure \ref{fig:IRFBU}. The IRFs without attention are somewhat similar to the iMPC model, although the spender in this model has more forward looking iMPCs and therefore the trough in their consumption occurs earlier.
+
+\begin{figure}
+	\includegraphics[width=0.45\textwidth]{../Code/Dynare/Figures/RealRateBU.jpg}
+	\includegraphics[width=0.45\textwidth]{../Code/Dynare/Figures/NominalRateBU.jpg}
+	\includegraphics[width=0.45\textwidth]{../Code/Dynare/Figures/ConsumptionBU.jpg}
+	\includegraphics[width=0.45\textwidth]{../Code/Dynare/Figures/InflationBU.jpg}
+	\caption{Impulse Response Functions to Bonds in Utility Model}
+	\label{fig:IRFBU}
+\end{figure}
 
 
 % Remove or comment out the next two lines if you are not using bibtex.
