@@ -18,9 +18,15 @@ dynare IMPCModel.mod noclearall nograph;
 IMPC_IRFs = oo_.irfs;
 dynare LTDebtModel.mod noclearall nograph;
 LT_debt_IRFs = oo_.irfs;
+attention = 0.0;
+dynare BUModel.mod noclearall nograph;
+BU_IRFs = oo_.irfs;
+attention = 1.0;
+dynare BUModel.mod noclearall nograph;
+BU_IRFs_attn = oo_.irfs;
 
 max_T = 15;
-Model = "LT_debt";
+Model = "BU";
 if Model=="SS"
     IRFs = SS_IRFs;
     Model_Name = "Saver Spender";
@@ -30,6 +36,9 @@ elseif Model=="IMPC"
 elseif Model=="LT_debt"
     IRFs = LT_debt_IRFs;
     Model_Name = "Long Term Debt";
+elseif Model=="BU"
+    IRFs = BU_IRFs;
+    Model_Name = "Bonds in Utility";
 end
 
 figure;
@@ -37,6 +46,10 @@ plot([-1:max_T],[0,0,IRFs.pi_p_ann_eps_nu(1:max_T)],'Linewidth',2, 'color','blue
 if Model=="SS"
     hold;
     plot([-1:max_T],[0,0,SS_IRFs_attn.pi_p_ann_eps_nu(1:max_T)],'Linewidth',2, 'color','blue','linestyle','--');
+    legend("Inattention","Attention")
+elseif Model=="BU"
+    hold;
+    plot([-1:max_T],[0,0,BU_IRFs_attn.pi_p_ann_eps_nu(1:max_T)],'Linewidth',2, 'color','blue','linestyle','--');
     legend("Inattention","Attention")
 end
 xlabel("Quarter")
@@ -52,6 +65,10 @@ if Model=="SS"
     plot([-1:max_T],[0,0,SS_IRFs_attn.c_R_eps_nu(1:max_T)],'Linewidth',2, 'color','blue','linestyle','--');
     plot([-1:max_T],[0,0,SS_IRFs_attn.c_K_eps_nu(1:max_T)],'Linewidth',2, 'color','red','linestyle','--');
     legend("Saver", "Spender", "Saver-Attention","Spender-Attention");
+elseif Model=="BU"
+    plot([-1:max_T],[0,0,BU_IRFs_attn.c_R_eps_nu(1:max_T)],'Linewidth',2, 'color','blue','linestyle','--');
+    plot([-1:max_T],[0,0,BU_IRFs_attn.c_K_eps_nu(1:max_T)],'Linewidth',2, 'color','red','linestyle','--');
+    legend("Saver", "Spender", "Saver-Attention","Spender-Attention");
 else
     legend("Saver", "Spender");
 end
@@ -65,6 +82,10 @@ plot([-1:max_T],[0,0,IRFs.r_real_ann_eps_nu(1:max_T)],'Linewidth',2, 'color','bl
 if Model=="SS"
     hold;
     plot([-1:max_T],[0,0,SS_IRFs_attn.r_real_ann_eps_nu(1:max_T)],'Linewidth',2, 'color','blue','linestyle','--');
+    legend("Inattention","Attention")
+elseif Model=="BU"
+    hold;
+    plot([-1:max_T],[0,0,BU_IRFs_attn.r_real_ann_eps_nu(1:max_T)],'Linewidth',2, 'color','blue','linestyle','--');
     legend("Inattention","Attention")
 end
 xlabel("Quarter")

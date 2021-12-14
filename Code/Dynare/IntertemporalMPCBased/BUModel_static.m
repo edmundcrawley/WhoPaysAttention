@@ -1,4 +1,4 @@
-function [residual, g1, g2, g3] = IMPCModel_static(y, x, params)
+function [residual, g1, g2, g3] = BUModel_static(y, x, params)
 %
 % Status : Computes static model for Dynare
 %
@@ -32,6 +32,8 @@ residual = zeros( 17, 1);
 %
 
 T41 = 1/params(5);
+T53 = (1-params(4))/40000;
+T60 = params(6)/params(7);
 lhs =y(1);
 rhs =y(11);
 residual(1)= lhs-rhs;
@@ -54,16 +56,16 @@ lhs =y(16);
 rhs =T41*(y(16)+y(2)+y(1)*params(2));
 residual(7)= lhs-rhs;
 lhs =y(17);
-rhs =(1-params(4))*(y(17)+y(3)-y(1)*params(2));
+rhs =T53*(y(17)+y(3)-y(1)*params(2));
 residual(8)= lhs-rhs;
 lhs =y(4);
-rhs =params(3)*(y(7)+y(16));
+rhs =y(4)-(y(12)-y(13))*T60;
 residual(9)= lhs-rhs;
 lhs =y(7);
 rhs =y(1)*params(2)+y(2)+y(9)*params(5);
 residual(10)= lhs-rhs;
 lhs =y(5);
-rhs =params(4)*(y(8)+y(17))+y(3)*0.3+(y(3)-y(1)*params(2))*0.0;
+rhs =y(5)*0.9+y(10)*0.5-(y(12)-y(13))*T60;
 residual(11)= lhs-rhs;
 lhs =y(8);
 rhs =y(3)+y(10)*params(5)-y(1)*params(2);
@@ -111,21 +113,19 @@ if nargout >= 2,
   g1(7,1)=(-(T41*params(2)));
   g1(7,2)=(-T41);
   g1(7,16)=1-T41;
-  g1(8,1)=(-((1-params(4))*(-params(2))));
-  g1(8,3)=(-(1-params(4)));
-  g1(8,17)=1-(1-params(4));
-  g1(9,4)=1;
-  g1(9,7)=(-params(3));
-  g1(9,16)=(-params(3));
+  g1(8,1)=(-(T53*(-params(2))));
+  g1(8,3)=(-T53);
+  g1(8,17)=1-T53;
+  g1(9,12)=T60;
+  g1(9,13)=(-T60);
   g1(10,1)=(-params(2));
   g1(10,2)=(-1);
   g1(10,7)=1;
   g1(10,9)=(-params(5));
-  g1(11,1)=(-(0.0*(-params(2))));
-  g1(11,3)=(-0.3);
-  g1(11,5)=1;
-  g1(11,8)=(-params(4));
-  g1(11,17)=(-params(4));
+  g1(11,5)=0.09999999999999998;
+  g1(11,10)=(-0.5);
+  g1(11,12)=T60;
+  g1(11,13)=(-T60);
   g1(12,1)=params(2);
   g1(12,3)=(-1);
   g1(12,8)=1;
