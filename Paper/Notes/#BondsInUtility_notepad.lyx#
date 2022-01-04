@@ -1,0 +1,513 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout LyX-Code
+\begin_inset Formula $max(\mathbb{E}\sum_{t=0}^{\infty}\beta^{t}(u(C_{t})+\nu(A_{t}-\text{\ensuremath{\underline{A}}}))$
+\end_inset
+
+  Utility maximization with 
+\begin_inset Formula $u(C)=\frac{C^{1-\gamma}}{1-\gamma}$
+\end_inset
+
+ and 
+\begin_inset Formula $v(A)=\alpha\frac{A^{1-\eta}}{1-\eta}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset Formula $A_{t}=R_{t-1}A_{t-1}-C_{t}+Y_{t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+FOC
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u'(C_{t})=\lambda_{t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v'(A_{t}-\text{\underbar{\ensuremath{\underline{A})-}\ensuremath{\lambda_{t}+R_{t}\beta}\ensuremath{\lambda_{t-1}=0}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Linearize
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\gamma c_{t}=\overline{R}\beta(-r_{t}+\gamma c_{t+1})+(1-\overline{R}\beta)\eta a_{t}$
+\end_inset
+
+ where 
+\begin_inset Formula $a_{t}$
+\end_inset
+
+ is the log deviation of 
+\begin_inset Formula $A_{t}-\underline{A}$
+\end_inset
+
+ from 
+\begin_inset Formula $\overline{A}-\underline{A}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a_{t}=\overline{R}\frac{\overline{A}}{\overline{A}-\underline{A}}r_{t-1}+\overline{R}a_{t-1}-\frac{\overline{C}}{\overline{A}-\underline{A}}c_{t}+\frac{\overline{Y}}{\overline{A}-\underline{A}}y_{t}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+In steady state the following hold - solve numerically:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\overline{C}=\overline{A}(\overline{R}-1)+\overline{Y}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\alpha\frac{(\overline{A}-\underline{A})^{-\eta}}{(\overline{A}(\overline{R}-1)+\overline{Y})^{-\gamma}}+\overline{R}\beta=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Guess and verify that
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $c_{t}=\sum_{s=0}^{\infty}\theta_{cys}y_{t+s}+\sum_{s=0}^{\infty}\theta_{crs}r_{t+s}+\theta_{cr}r_{t-1}+\theta_{ca}a_{t-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a_{t}=\sum_{s=0}^{\infty}\theta_{ays}y_{t+s}+\sum_{s=0}^{\infty}\theta_{ars}r_{t+s}+\theta_{ar}r_{t-1}+\theta_{aa}a_{t-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Compare coefficients of 
+\begin_inset Formula $a_{t-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\gamma\theta_{ca}=\overline{R}\beta\gamma\theta_{ca}\theta_{aa}+(1-\overline{R}\beta)\eta\theta_{aa}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\theta_{aa}=\overline{R}-\frac{\overline{C}}{\overline{A}-\underline{A}}\theta_{ca}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\implies\theta_{ca}=\frac{(\overline{R}\beta\theta_{ca}+(1-\overline{R}\beta)\frac{\eta}{\gamma})\overline{R}}{1+(\overline{R}\beta\theta_{ca}+(1-\overline{R}\beta)\frac{\eta}{\gamma})\frac{\overline{C}}{\overline{A}-\underline{A}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\implies\theta_{aa}=\frac{\overline{R}}{1+(\overline{R}\beta\theta_{ca}+(1-\overline{R}\beta)\frac{\eta}{\gamma})\frac{\overline{C}}{\overline{A}-\underline{A}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The above expressions, while not numerically self contained, are useful
+ for writing future expressions in terms of 
+\begin_inset Formula $\theta_{ca}$
+\end_inset
+
+ and 
+\begin_inset Formula $\theta_{aa}$
+\end_inset
+
+.
+ First we solve the above using the quadratic formula on the below expression
+ in 
+\begin_inset Formula $\theta_{ca}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\gamma\theta_{ca}=\overline{R}\beta\gamma\theta_{ca}(\overline{R}-\frac{\overline{C}}{\overline{A}-\underline{A}}\theta_{ca})+(1-\overline{R}\beta)\eta(\overline{R}-\frac{\overline{C}}{\overline{A}-\underline{A}}\theta_{ca})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\implies-\overline{R}\beta\gamma\frac{\overline{C}}{\overline{A}-\underline{A}}\theta_{ca}^{2}+(\overline{R}^{2}\beta\gamma-\gamma-(1-\overline{R}\beta)\eta\frac{\overline{C}}{\overline{A}-\underline{A}})\theta_{ca}+(1-\overline{R}\beta)\eta\overline{R}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Compare coefficients of 
+\begin_inset Formula $r_{t-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\gamma\theta_{cr}=\overline{R}\beta\gamma\theta_{ca}\theta_{ar}+(1-\overline{R}\beta)\eta\theta_{ar}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\theta_{ar}=\overline{R}\frac{\overline{A}}{\overline{A}-\underline{A}}-\frac{\overline{C}}{\overline{A}-\underline{A}}\theta_{cr}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\implies\theta_{cr}=\frac{(\overline{R}\beta\theta_{ca}+(1-\overline{R}\beta)\frac{\eta}{\gamma})\overline{R}\frac{\overline{A}}{\overline{A}-\underline{A}}}{1+(\overline{R}\beta\theta_{ca}+(1-\overline{R}\beta)\frac{\eta}{\gamma})\frac{\overline{C}}{\overline{A}-\underline{A}}}=\frac{\overline{A}}{\overline{A}-\underline{A}}\theta_{ca}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\implies\theta_{ar}=\frac{\overline{R}\frac{\overline{A}}{\overline{A}-\underline{A}}}{1+(\overline{R}\beta\theta_{ca}+(1-\overline{R}\beta)\frac{\eta}{\gamma})\frac{\overline{C}}{\overline{A}-\underline{A}}}=\frac{\overline{A}}{\overline{A}-\underline{A}}\theta_{aa}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Compare coefficients of 
+\begin_inset Formula $y_{t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\gamma\theta_{cy0}=\overline{R}\beta\gamma\theta_{ca}\theta_{ay0}+(1-\overline{R}\beta)\eta\theta_{ay0}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\theta_{ay0}=-\frac{\overline{C}}{\overline{A}-\underline{A}}\theta_{cy0}+\frac{\overline{Y}}{\overline{A}-\underline{A}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\implies\theta_{cy0}=\frac{(\overline{R}\beta\theta_{ca}+(1-\overline{R}\beta)\frac{\eta}{\gamma})\frac{\overline{Y}}{\overline{A}-\underline{A}}}{1+(\overline{R}\beta\theta_{ca}+(1-\overline{R}\beta)\frac{\eta}{\gamma})\frac{\overline{C}}{\overline{A}-\underline{A}}}=\frac{\overline{Y}}{\overline{R}(\overline{A}-\underline{A})}\theta_{ca}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\implies\theta_{ay0}=\frac{\frac{\overline{Y}}{\overline{A}-\underline{A}}}{1+(\overline{R}\beta\theta_{ca}+(1-\overline{R}\beta)\frac{\eta}{\gamma})\frac{\overline{C}}{\overline{A}-\underline{A}}}=\frac{\overline{Y}}{\overline{R}(\overline{A}-\underline{A})}\theta_{aa}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Compare coefficients of 
+\begin_inset Formula $r_{t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\gamma\theta_{cr0}=\overline{R}\beta(-1+\gamma\theta_{cr}+\gamma\theta_{ca}\theta_{ar0})+(1-\overline{R}\beta)\eta\theta_{ar0}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\theta_{ar0}=-\frac{\overline{C}}{\overline{A}-\underline{A}}\theta_{cr0}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\implies\theta_{cr0}=\frac{\overline{R}\beta(\frac{-1}{\gamma}+\theta_{cr})}{1+(\overline{R}\beta\theta_{ca}+(1-\overline{R}\beta)\frac{\eta}{\gamma})\frac{\overline{C}}{\overline{A}-\underline{A}}}=\beta(\frac{-1}{\gamma}+\theta_{cr})\theta_{aa}$
+\end_inset
+
+ I feel like I should have better intuition about this equation
+\end_layout
+
+\begin_layout Standard
+Compare coefficients of 
+\begin_inset Formula $y_{t+s}$
+\end_inset
+
+for 
+\begin_inset Formula $s\geq1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\gamma\theta_{cys}=\overline{R}\beta\gamma(\theta_{cys-1}+\theta_{ca}\theta_{ays})+(1-\overline{R}\beta)\eta\theta_{ays}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\theta_{ays}=-\frac{\overline{C}}{\overline{A}-\underline{A}}\theta_{cys}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\implies\theta_{cys}=\frac{\overline{R}\beta}{1+(\overline{R}\beta\theta_{ca}+(1-\overline{R}\beta)\frac{\eta}{\gamma})\frac{\overline{C}}{\overline{A}-\underline{A}}}\theta_{cys-1}=\beta\theta_{aa}\theta_{cys-1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Compare coefficients of 
+\begin_inset Formula $r_{t+s}$
+\end_inset
+
+for 
+\begin_inset Formula $s\geq1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\gamma\theta_{crs}=\overline{R}\beta\gamma(\theta_{crs-1}+\theta_{ca}\theta_{ars})+(1-\overline{R}\beta)\eta\theta_{ars}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\theta_{ars}=-\frac{\overline{C}}{\overline{A}-\underline{A}}\theta_{crs}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\implies\theta_{crs}=\frac{\overline{R}\beta}{1+(\overline{R}\beta\theta_{ca}+(1-\overline{R}\beta)\frac{\eta}{\gamma})\frac{\overline{C}}{\overline{A}-\underline{A}}}\theta_{crs-1}=\beta\theta_{aa}\theta_{crs-1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Once we have calculated these theta coefficients, we can propose some behavioral
+ changes.
+\end_layout
+
+\begin_layout Standard
+One change would be to introduce cognitive, a la Gabaix, where response
+ to future events is discounted at rate 
+\begin_inset Formula $\overline{m}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $c_{t}=\sum_{s=0}^{\infty}\theta_{cys}y_{t+s}\overline{m}^{s}+\sum_{s=0}^{\infty}\theta_{crs}r_{t+s}\overline{m}^{s+1}+\theta_{cr}r_{t-1}+\theta_{ca}a_{t-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a_{t}=\sum_{s=0}^{\infty}\theta_{ays}y_{t+s}\overline{m}^{s}+\sum_{s=0}^{\infty}\theta_{ars}r_{t+s}\overline{m}^{s+1}+\theta_{ar}r_{t-1}+\theta_{aa}a_{t-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This differs from Gabaix 2020 (I think) in that it is only the exogenous
+ states that are discounted.
+ Given the discounted exogenous states, the agent correctly forecasts her
+ own endogenous state (savings).
+\end_layout
+
+\begin_layout Standard
+We could also take out the intertemporal substitution part of 
+\begin_inset Formula $\theta_{cr0}$
+\end_inset
+
+ - the 
+\begin_inset Formula $\frac{1}{\gamma}$
+\end_inset
+
+ part - on the grounds that it is cognitively difficult to figure out? This
+ is what I had originally been doing.
+\end_layout
+
+\begin_layout Standard
+We could also just discount all the future by the same factor 
+\begin_inset Formula $\overline{m}$
+\end_inset
+
+, instead of 
+\begin_inset Formula $\overline{m}^{s}$
+\end_inset
+
+, on the grounds that it is no harder to look up the 10 year interest rate
+ than it is the overnight rate.
+\end_layout
+
+\begin_layout Standard
+A more thorough approach would be to calculate the welfare costs of ignoring
+ the future at different horizons.
+ What might be true is that these bond-in-utility households have high utility
+ loss to ignoring the present, but low utility loss to ignoring the future.
+ In contrast, agents
+\end_layout
+
+\begin_layout Standard
+If we set 
+\begin_inset Formula $\overline{m}=0$
+\end_inset
+
+ then we recover the iMPC model I had originally proposed in which households
+ only react to income after they have received it.
+ I think this is a useful special case, and perhaps not too far off the
+ empirical evidence.
+\end_layout
+
+\begin_layout Standard
+All these behavioral changes can give an alternative explanation for the
+ sluggish response of consumption to interest rate changes.
+\end_layout
+
+\end_body
+\end_document
