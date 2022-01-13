@@ -1,13 +1,13 @@
 
 eta = 2;
 gamma = 2;
-alpha = 0.1;
+alpha = 0.005;
 A_low = -3;
 R = 1.0;
 beta = 0.9;
 Y_bar = 1.0;
 
-attn_factor = 0.5; %attention on the future is discounted
+attn_factor = 0.2; %attention on the future is discounted
 
 max_horizon =100;
 
@@ -62,7 +62,7 @@ r_m1 = 0.00;
 a_m1 = 0;
 %y(1:20) = 1;
 %r(20)=0.01;
-r = 0.01*0.9.^(1:max_horizon);
+r = 0.01*0.8.^(1:max_horizon);
 
 a_m1_discount_attn = a_m1;
 for i = 1:max_horizon
@@ -84,10 +84,11 @@ A = A_low + (A_bar-A_low)*(1+a);
 C_discount_attn = C_bar*(1+c_discount_attn);
 A_discount_attn = A_low + (A_bar-A_low)*(1+a_discount_attn);
     
+plot_length = 24
 figure;
-plot(C);
+plot(C(1:plot_length));
 hold on;
-plot(C_discount_attn);
+plot(C_discount_attn(1:plot_length));
 legend('No discounting', 'Future discounting')
 title('Bonds in Utility Consumption Response to Interest Rate Shock')
 saveas(gcf,"../Dynare/Figures/BU_future_discounting.jpg")
